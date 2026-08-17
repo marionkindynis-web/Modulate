@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { isSmtpReady, escapeHtml, sendSiteEmail } from "@/lib/email";
+import { isSmtpReady, escapeHtml, sendSiteEmail, SmtpSendError } from "@/lib/email";
 import { site } from "@/lib/site";
 import { contactSchema } from "@/lib/validations/contact";
 
@@ -48,7 +48,8 @@ export async function POST(request: Request) {
     });
     return NextResponse.json({ ok: true });
   } catch (error) {
-    console.error("[coming-soon] send failed", error);
-    return NextResponse.json({ ok: false }, { status: 500 });
+    const code = error instanceof SmtpSendError ? error.code : "UNKNOWN";
+    console.error("[coming-soon] send failed", code, error);
+    return NextResponse.json({ ok: false, code }, { status: 500 });
   }
 }

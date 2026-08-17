@@ -23,9 +23,7 @@ function loadEnvFile(filePath) {
     ) {
       value = value.slice(1, -1);
     }
-    if (process.env[key] === undefined) {
-      process.env[key] = value;
-    }
+    process.env[key] = value;
   }
 }
 
@@ -34,10 +32,12 @@ for (const filePath of [
   resolve(root, ".env.local"),
   resolve(root, ".env.production"),
   resolve(root, ".env.production.local"),
+  resolve(homedir(), ".env.local"),
   resolve(root, "smtp.env"),
   resolve(homedir(), "smtp.env"),
   resolve(homedir(), "sites/modulate.ch/smtp.env"),
   "/srv/customer/smtp.env",
+  "/srv/customer/sites/modulate.ch/smtp.env",
 ]) {
   loadEnvFile(filePath);
 }
