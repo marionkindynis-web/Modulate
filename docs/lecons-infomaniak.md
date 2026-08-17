@@ -17,6 +17,7 @@ Preuve que l’envoi marche : `POST https://modulate.ch/api/coming-soon` → `20
 - Modifier `npm start` pour y préfixer `SMTP_*`. La commande de lancement reste `npm start`.
 - Interpréter `localhost` dans les logs Next.js comme un mauvais domaine. C’est cosmétique ; le site est `modulate.ch`.
 - Enchaîner nano / SSH / Build / Redémarrer sans lire le code HTTP et le JSON de `/api/coming-soon`.
+- Laisser des changements production uniquement en local. Toujours `git push origin main` dans le même tour.
 
 ## État sain (référence)
 

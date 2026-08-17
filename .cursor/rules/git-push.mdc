@@ -1,0 +1,16 @@
+---
+description: Toujours pousser les changements du site sur GitHub
+alwaysApply: true
+---
+
+# Git — push systématique
+
+Toute modification destinée à modulate.ch se termine dans le **même tour** par :
+
+1. `git add` des fichiers concernés (jamais `.env`, `smtp.env`, secrets)
+2. `git commit`
+3. `git push origin main`
+
+Ne pas laisser de changements production uniquement sur le Mac. Infomaniak ne lit que GitHub.
+
+Si le push échoue, réessayer avant de demander un Build.
