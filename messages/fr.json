@@ -1,0 +1,298 @@
+{
+  "Meta": {
+    "titleTemplate": "Modulate — {page}"
+  },
+  "Nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À propos",
+    "work": "Réalisations",
+    "quote": "Devis",
+    "contact": "Contact",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "mainNav": "Navigation principale",
+    "language": "Langue",
+    "skip": "Aller au contenu"
+  },
+  "Footer": {
+    "tagline": "ADAPT. OPTIMIZE. ELEVATE.",
+    "rights": "Tous droits réservés.",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "manageCookies": "Gérer mes cookies",
+    "host": "Hébergement"
+  },
+  "Common": {
+    "learnMore": "En savoir plus",
+    "placeholder": "Contenu placeholder — à remplacer.",
+    "indicative": "Fourchette indicative, hors TVA, non contractuelle.",
+    "imageAltPlaceholder": "Visuel placeholder Modulate"
+  },
+  "ComingSoon": {
+    "metaTitle": "Modulate — Bientôt en ligne",
+    "metaDescription": "MarionWeb devient Modulate. Nouvelle structure, refonte complète et services élargis. Site en cours de refonte.",
+    "kicker": "Site en refonte",
+    "title": "MarionWeb devient",
+    "brand": "Modulate",
+    "intro": "Notre structure accueille un nouvel associé. Nous en profitons pour mener une refonte complète et élargir nos services, afin de mieux répondre aux besoins de nos clients.",
+    "introNext": "Notre nouveau site sera en ligne prochainement. En attendant, nous restons à votre disposition.",
+    "formTitle": "Nous contacter",
+    "formLead": "Laissez-nous un message, nous vous répondrons dans les meilleurs délais.",
+    "name": "Nom",
+    "namePlaceholder": "Votre nom",
+    "email": "E-mail",
+    "emailPlaceholder": "votre@email.ch",
+    "message": "Message",
+    "messagePlaceholder": "Votre message",
+    "submit": "Envoyer le message",
+    "submitting": "Envoi en cours…",
+    "note": "Vos données ne sont utilisées que pour répondre à votre demande.",
+    "successTitle": "Message envoyé",
+    "successBody": "Merci pour votre message. Nous vous répondrons sous peu à l’adresse indiquée.",
+    "dryRun": "Mode local : l’e-mail n’a pas été envoyé (SMTP non configuré).",
+    "error": "L’envoi n’a pas abouti. Merci de réessayer.",
+    "honeypot": "Ne pas remplir",
+    "location": "Genève, Suisse"
+  },
+  "Home": {
+    "metaTitle": "Modulate — Adapt. Optimize. Elevate.",
+    "metaDescription": "Modulate améliore l’existant. Nous adaptons, optimisons et élevons vos dispositifs pour plus de clarté et de performance.",
+    "kicker": "Modulate",
+    "title": "Modulate améliore l’existant.",
+    "intro": "Nous intervenons sur ce qui est déjà en place : processus, outils, organisation. Moins de rupture, plus de précision. Placeholder — texte à remplacer.",
+    "primaryCta": "Demander un devis",
+    "secondaryCta": "Découvrir les services",
+    "servicesKicker": "Services",
+    "servicesTitle": "Trois leviers, un même fil.",
+    "workKicker": "Réalisations",
+    "workTitle": "Des interventions ciblées.",
+    "workCta": "Voir les réalisations",
+    "ctaTitle": "Obtenez une fourchette en quelques choix.",
+    "ctaBody": "Le configurateur estime une fourchette selon votre périmètre. Les montants actuels sont des placeholders.",
+    "ctaButton": "Estimer un projet"
+  },
+  "Services": {
+    "metaTitle": "Services — Modulate",
+    "metaDescription": "Adapter, optimiser et élever l’existant : les services Modulate, à préciser.",
+    "kicker": "Services",
+    "title": "Ce que nous améliorons.",
+    "intro": "Placeholder. Trois familles d’intervention, à affiner avec le contenu définitif.",
+    "items": {
+      "adapt": {
+        "kicker": "Adapt",
+        "title": "Adapter l’existant",
+        "body": "Recalibrer ce qui est déjà là pour qu’il serve mieux le quotidien. Placeholder."
+      },
+      "optimize": {
+        "kicker": "Optimize",
+        "title": "Optimiser les flux",
+        "body": "Simplifier les enchaînements, réduire les frictions, clarifier les responsabilités. Placeholder."
+      },
+      "elevate": {
+        "kicker": "Elevate",
+        "title": "Élever le niveau",
+        "body": "Installer un standard plus net, plus tenable, plus lisible pour les équipes. Placeholder."
+      }
+    }
+  },
+  "About": {
+    "metaTitle": "À propos — Modulate",
+    "metaDescription": "Modulate : une pratique sobre, tournée vers l’amélioration de l’existant.",
+    "kicker": "À propos",
+    "title": "Une pratique de précision.",
+    "intro": "Placeholder. Positionnement, méthode et équipe à compléter.",
+    "body": "Modulate part de ce qui existe déjà. Nous n’ajoutons de la complexité que lorsqu’elle est utile. Cette page accueillera bientôt le récit de l’entreprise, les personnes et la manière de travailler."
+  },
+  "Work": {
+    "metaTitle": "Réalisations — Modulate",
+    "metaDescription": "Interventions Modulate : études de cas à venir.",
+    "kicker": "Réalisations",
+    "title": "Interventions à documenter.",
+    "intro": "Trois cartes placeholder. Noms, visuels et résultats seront remplacés.",
+    "items": {
+      "one": {
+        "kicker": "Placeholder",
+        "title": "Cas 01 — à nommer",
+        "body": "Contexte, action, résultat. Texte à remplacer."
+      },
+      "two": {
+        "kicker": "Placeholder",
+        "title": "Cas 02 — à nommer",
+        "body": "Contexte, action, résultat. Texte à remplacer."
+      },
+      "three": {
+        "kicker": "Placeholder",
+        "title": "Cas 03 — à nommer",
+        "body": "Contexte, action, résultat. Texte à remplacer."
+      }
+    }
+  },
+  "Quote": {
+    "metaTitle": "Devis — Modulate",
+    "metaDescription": "Estimez une fourchette de prix selon vos choix, puis envoyez votre demande à Modulate.",
+    "kicker": "Devis",
+    "title": "Estimez une fourchette.",
+    "intro": "Répondez à quelques questions. Les montants affichés sont des placeholders, indicatifs et hors TVA.",
+    "progress": "Étape {current} sur {total}",
+    "back": "Retour",
+    "next": "Continuer",
+    "estimateKicker": "Estimation",
+    "rangeLabel": "Fourchette",
+    "manualTitle": "Sur devis",
+    "manualBody": "Cette combinaison demande un échange. Envoyez-nous le détail, nous reviendrons vers vous.",
+    "incomplete": "La fourchette se précise à chaque choix.",
+    "disclaimer": "Fourchette indicative, hors TVA, non contractuelle. Grille placeholder.",
+    "contactTitle": "Vos coordonnées",
+    "contactIntro": "Nous recevons vos choix et la fourchette calculée.",
+    "name": "Nom",
+    "email": "Adresse e-mail",
+    "organisation": "Organisation",
+    "organisationPlaceholder": "Entreprise ou équipe",
+    "message": "Message (optionnel)",
+    "messagePlaceholder": "Contexte utile, contraintes, délai…",
+    "submit": "Envoyer la demande",
+    "submitting": "Envoi en cours…",
+    "successTitle": "Demande envoyée.",
+    "successBody": "Nous avons bien reçu vos choix. Nous revenons vers vous rapidement.",
+    "dryRun": "Mode local : l’e-mail n’a pas été envoyé (SMTP non configuré).",
+    "error": "L’envoi n’a pas abouti. Réessayez ou passez par la page Contact.",
+    "summary": "Récapitulatif",
+    "steps": {
+      "object": {
+        "title": "Que souhaitez-vous améliorer ?",
+        "options": {
+          "process": {
+            "label": "Un processus",
+            "description": "Un flux de travail déjà identifié."
+          },
+          "tools": {
+            "label": "Des outils",
+            "description": "La stack et ses usages au quotidien."
+          },
+          "organisation": {
+            "label": "L’organisation",
+            "description": "Rôles, rituels, coordination."
+          },
+          "digital": {
+            "label": "Un parcours digital",
+            "description": "Site, parcours, interfaces existantes."
+          }
+        }
+      },
+      "scope": {
+        "title": "Quel est le périmètre ?",
+        "options": {
+          "flow": {
+            "label": "Un flux",
+            "description": "Une chaîne courte, un cas d’usage."
+          },
+          "team": {
+            "label": "Une équipe",
+            "description": "Plusieurs personnes, un même contexte."
+          },
+          "org": {
+            "label": "L’organisation",
+            "description": "Plusieurs équipes ou un dispositif transverse."
+          }
+        }
+      },
+      "maturity": {
+        "title": "Où en êtes-vous aujourd’hui ?",
+        "options": {
+          "structured": {
+            "label": "Déjà structuré",
+            "description": "L’existant est documenté et utilisé."
+          },
+          "partial": {
+            "label": "Partiel",
+            "description": "Des bases, encore des angles morts."
+          },
+          "build": {
+            "label": "À construire",
+            "description": "Peu de formalisation à ce jour."
+          }
+        }
+      },
+      "timeline": {
+        "title": "Quel rythme visez-vous ?",
+        "options": {
+          "flexible": {
+            "label": "Flexible",
+            "description": "Le calendrier peut s’adapter."
+          },
+          "standard": {
+            "label": "Environ 3 mois",
+            "description": "Une fenêtre claire, sans urgence extrême."
+          },
+          "urgent": {
+            "label": "Urgent",
+            "description": "Délai très court — traité sur devis."
+          }
+        }
+      }
+    }
+  },
+  "Contact": {
+    "metaTitle": "Contact — Modulate",
+    "metaDescription": "Écrivez à Modulate. Nous répondons aux demandes de contact et de collaboration.",
+    "kicker": "Contact",
+    "title": "Écrivez-nous.",
+    "intro": "Un message suffit. Pour une estimation chiffrée, utilisez plutôt le configurateur de devis.",
+    "quoteLink": "Estimer un projet",
+    "name": "Nom",
+    "email": "Adresse e-mail",
+    "message": "Message",
+    "messagePlaceholder": "Votre demande…",
+    "submit": "Envoyer",
+    "submitting": "Envoi en cours…",
+    "successTitle": "Message envoyé.",
+    "successBody": "Nous vous répondrons dès que possible.",
+    "dryRun": "Mode local : l’e-mail n’a pas été envoyé (SMTP non configuré).",
+    "error": "L’envoi n’a pas abouti. Merci de réessayer.",
+    "honeypot": "Ne pas remplir"
+  },
+  "Legal": {
+    "metaTitle": "Mentions légales — Modulate",
+    "metaDescription": "Mentions légales du site Modulate.",
+    "kicker": "Mentions légales",
+    "title": "Mentions légales",
+    "intro": "Les champs ci-dessous sont des placeholders. Ils seront complétés avec les informations officielles, sans valeurs inventées.",
+    "publisher": "Éditeur",
+    "publisherBody": "[Raison sociale, forme juridique, siège social — à compléter]",
+    "identifier": "Identification",
+    "identifierBody": "[IDE/UID ou SIRET, registre du commerce — à compléter]",
+    "director": "Directeur de la publication",
+    "directorBody": "[Nom du représentant — à compléter]",
+    "contact": "Contact",
+    "contactBody": "[E-mail et téléphone officiels — à compléter]",
+    "host": "Hébergeur",
+    "hostBody": "Infomaniak Network SA, Rue Eugène-Marziano 25, 1227 Genève, Suisse. https://www.infomaniak.com"
+  },
+  "Privacy": {
+    "metaTitle": "Politique de confidentialité — Modulate",
+    "metaDescription": "Traitement des données du formulaire de contact et du configurateur de devis Modulate.",
+    "kicker": "Confidentialité",
+    "title": "Politique de confidentialité",
+    "intro": "Cette page décrit le traitement des données issues des formulaires. Les durées et le responsable seront confirmés avec les informations légales.",
+    "controllerTitle": "Responsable du traitement",
+    "controllerBody": "[Identité de l’éditeur — à compléter]. Contact : [e-mail — à compléter].",
+    "purposeTitle": "Finalité",
+    "purposeBody": "Les données du formulaire de contact et du configurateur de devis (nom, e-mail, organisation, message, choix du devis) sont utilisées uniquement pour répondre à votre demande et établir un échange commercial.",
+    "legalTitle": "Base légale",
+    "legalBody": "Intérêt légitime et mesures précontractuelles : traiter une demande que vous initiez.",
+    "retentionTitle": "Durée de conservation",
+    "retentionBody": "[Durée à confirmer, par exemple 12 mois après le dernier échange, puis suppression ou archivage limité]. Placeholder.",
+    "recipientsTitle": "Destinataires",
+    "recipientsBody": "L’équipe Modulate. L’hébergeur Infomaniak. L’envoi d’e-mails passe par le SMTP Infomaniak. Aucun cession commerciale.",
+    "rightsTitle": "Vos droits",
+    "rightsBody": "Vous pouvez demander l’accès, la rectification, l’effacement, la limitation ou l’opposition, dans les conditions prévues par le droit applicable (LPD / RGPD selon les cas). Écrivez à [e-mail — à compléter].",
+    "cookiesTitle": "Cookies",
+    "cookiesBody": "Aucun cookie non essentiel n’est déposé à ce jour. Aucun outil d’analytics n’est chargé. Une bannière de consentement sera ajoutée si un tracker est introduit."
+  },
+  "NotFound": {
+    "title": "Page introuvable",
+    "body": "Cette adresse n’existe pas ou plus.",
+    "cta": "Retour à l’accueil"
+  }
+}
