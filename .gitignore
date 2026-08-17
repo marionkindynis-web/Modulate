@@ -21,6 +21,7 @@
 # env files (never commit secrets)
 .env
 .env*.local
+smtp.env
 !.env.example
 
 # logs

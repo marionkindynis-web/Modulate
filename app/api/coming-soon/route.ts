@@ -30,6 +30,10 @@ export async function POST(request: Request) {
   `;
 
   if (!isSmtpReady()) {
+    if (process.env.NODE_ENV === "production") {
+      console.error("[coming-soon] SMTP is not configured");
+      return NextResponse.json({ ok: false }, { status: 503 });
+    }
     console.info("[coming-soon] dry-run: SMTP is not configured");
     return NextResponse.json({ ok: true, dryRun: true });
   }

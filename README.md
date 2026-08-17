@@ -22,7 +22,7 @@ npm start
 
 ## Variables d’environnement
 
-À renseigner dans `.env.local` en local, et **dans le Manager Infomaniak** en production (jamais dans Git) :
+À renseigner dans `.env.local` en local. En production Infomaniak (jamais dans Git) : fichier `smtp.env` dans le home SSH (`~/smtp.env`) ou à côté de `package.json`.
 
 | Variable | Rôle |
 | --- | --- |
