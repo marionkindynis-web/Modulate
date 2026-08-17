@@ -23,6 +23,9 @@ function loadEnvFile(filePath) {
     ) {
       value = value.slice(1, -1);
     }
+    if (["PORT", "HOSTNAME", "NODE_ENV", "HOME", "PATH", "PWD"].includes(key)) {
+      continue;
+    }
     process.env[key] = value;
   }
 }
@@ -47,11 +50,15 @@ console.info(`[start] SMTP ${smtpReady ? "ready" : "not configured"}`);
 
 const require = createRequire(import.meta.url);
 const nextBin = require.resolve("next/dist/bin/next");
-const child = spawn(process.execPath, [nextBin, "start"], {
-  cwd: root,
-  env: process.env,
-  stdio: "inherit",
-});
+const child = spawn(
+  process.execPath,
+  [nextBin, "start", "--hostname", "0.0.0.0"],
+  {
+    cwd: root,
+    env: process.env,
+    stdio: "inherit",
+  },
+);
 
 child.on("exit", (code, signal) => {
   if (signal) {
