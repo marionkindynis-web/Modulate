@@ -141,10 +141,11 @@ async function sendWithAttempt(
   mail: {
     from: string;
     to: string;
-    replyTo: string;
+    replyTo?: string;
     subject: string;
     text: string;
     html: string;
+    envelope: { from: string; to: string };
   },
 ): Promise<void> {
   const transporter = nodemailer.createTransport({
@@ -198,7 +199,14 @@ export async function sendSiteEmail(payload: MailPayload & { to?: string }): Pro
     } catch (error) {
       lastError = error;
       const code = smtpErrorCode(error);
-      console.error("[email] failed on port", attempt.port, code, smtpErrorDetail(error));
+      const detail = smtpErrorDetail(error);
+      console.error("[email] failed on port", attempt.port, code, detail);
+      if (detail?.toLowerCase().includes("rbl") || detail?.toLowerCase().includes("blacklist")) {
+        const { replyTo: _replyTo, ...withoutReplyTo } = mail;
+        await sendWithAttempt(attempt, withoutReplyTo);
+        console.info("[email] sent via port", attempt.port, "without reply-to");
+        return;
+      }
       if (code === "EAUTH" || code === "EMESSAGE" || code === "EENVELOPE") {
         break;
       }
