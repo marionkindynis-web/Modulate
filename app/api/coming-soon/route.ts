@@ -49,7 +49,8 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   } catch (error) {
     const code = error instanceof SmtpSendError ? error.code : "UNKNOWN";
-    console.error("[coming-soon] send failed", code, error);
-    return NextResponse.json({ ok: false, code }, { status: 500 });
+    const detail = error instanceof SmtpSendError ? error.detail : undefined;
+    console.error("[coming-soon] send failed", code, detail, error);
+    return NextResponse.json({ ok: false, code, detail }, { status: 500 });
   }
 }

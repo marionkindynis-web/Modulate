@@ -20,11 +20,13 @@ type SmtpAttempt = {
 
 export class SmtpSendError extends Error {
   readonly code: string;
+  readonly detail?: string;
 
-  constructor(code: string, message: string) {
+  constructor(code: string, message: string, detail?: string) {
     super(message);
     this.name = "SmtpSendError";
     this.code = code;
+    this.detail = detail;
   }
 }
 
@@ -115,10 +117,23 @@ function smtpErrorCode(error: unknown): string {
     return String(error.code);
   }
   if (error instanceof Error && error.message) {
-    const match = error.message.match(/\b(EAUTH|ECONNECTION|ETIMEDOUT|EDNS|EENVELOPE|ETLS)\b/);
+    const match = error.message.match(
+      /\b(EAUTH|ECONNECTION|ETIMEDOUT|EDNS|EENVELOPE|ETLS|EMESSAGE)\b/,
+    );
     if (match) return match[1];
   }
   return "UNKNOWN";
+}
+
+function smtpErrorDetail(error: unknown): string | undefined {
+  if (error instanceof SmtpSendError) return error.detail;
+  if (error && typeof error === "object" && "response" in error && error.response) {
+    return String(error.response).slice(0, 240);
+  }
+  if (error instanceof Error && error.message) {
+    return error.message.slice(0, 240);
+  }
+  return undefined;
 }
 
 async function sendWithAttempt(
@@ -147,20 +162,21 @@ async function sendWithAttempt(
 }
 
 export async function sendSiteEmail(payload: MailPayload & { to?: string }): Promise<void> {
-  const { host, port, user, pass, to, from, secure } = getSmtpConfig();
+  const { host, port, user, pass, to, secure } = getSmtpConfig();
   const recipient = payload.to ?? to;
 
-  if (!user || !pass || !from || !recipient) {
+  if (!user || !pass || !recipient) {
     throw new SmtpSendError("NOT_CONFIGURED", "SMTP is not configured");
   }
 
   const mail = {
-    from: `"Modulate" <${from}>`,
+    from: user,
     to: recipient,
     replyTo: payload.replyTo,
     subject: payload.subject,
     text: payload.text,
     html: payload.html,
+    envelope: { from: user, to: recipient },
   };
 
   const attempts: SmtpAttempt[] = [
@@ -181,11 +197,19 @@ export async function sendSiteEmail(payload: MailPayload & { to?: string }): Pro
       return;
     } catch (error) {
       lastError = error;
-      console.error("[email] failed on port", attempt.port, smtpErrorCode(error));
+      const code = smtpErrorCode(error);
+      console.error("[email] failed on port", attempt.port, code, smtpErrorDetail(error));
+      if (code === "EAUTH" || code === "EMESSAGE" || code === "EENVELOPE") {
+        break;
+      }
     }
   }
 
-  throw new SmtpSendError(smtpErrorCode(lastError), "SMTP send failed");
+  throw new SmtpSendError(
+    smtpErrorCode(lastError),
+    "SMTP send failed",
+    smtpErrorDetail(lastError),
+  );
 }
 
 export function escapeHtml(value: string): string {
