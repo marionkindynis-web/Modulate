@@ -28,15 +28,14 @@ export function Logo({
   }
 
   return (
-    <Link href="/" className={`inline-flex min-w-[160px] ${className}`}>
+    <Link href="/" className={`inline-flex items-center ${className}`}>
       <Image
-        src="/brand/logo-horizontal.svg"
-        alt={site.name}
-        width={200}
-        height={70}
-        className="h-10 w-auto"
+        src="/brand/logo-horizontal.png"
+        alt={`${site.name} — ${site.taglineLockup}`}
+        width={960}
+        height={336}
+        className="h-12 w-auto lg:h-14"
         priority={priority}
-        unoptimized
       />
     </Link>
   );

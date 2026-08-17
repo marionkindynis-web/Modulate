@@ -42,7 +42,7 @@ Sans SMTP, les formulaires (coming soon, contact, devis) valident la requête et
 
 1. Node.js **20 LTS** (ou plus récent, supporté).
 2. Dossier d’exécution : racine du repo (`package.json`).
-3. Build : `npm install && npm run build`
+3. Build : `git pull origin main && npm install && npm run build`
 4. Start : `npm start`
 5. Port : celui du Manager, via `PORT`.
 6. SSL Let’s Encrypt à activer une fois le domaine branché.

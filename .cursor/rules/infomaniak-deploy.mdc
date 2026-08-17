@@ -1,0 +1,15 @@
+---
+description: Infomaniak Node.js — déploiement et SMTP, erreurs à ne pas répéter
+alwaysApply: true
+---
+
+# Infomaniak (Modulate)
+
+- Commande de lancement : toujours `npm start`. Ne jamais y coller de variables SMTP.
+- Commande de build : `git pull origin main && npm install && npm run build`. Sans `git pull`, Infomaniak recompile l’ancien code.
+- Pas d’UI de variables d’environnement. Secrets SMTP uniquement dans `smtp.env` sur le serveur (gitignoré), jamais dans Git.
+- Mot de passe SMTP = mot de passe de la **boîte mail**, pas du Manager, pas d’« appareil connecté » (sauf si Infomaniak renvoie `EAUTH`).
+- Mesurer avant d’agir : `curl` POST `/api/coming-soon` avec une **vraie** adresse (`marion@marionweb.ch`). Jamais `test@example.com` / `example.com` (Infomaniak RBL → `554` / `EMESSAGE`, faux diagnostic).
+- `localhost` dans les logs Next.js est cosmétique. Le site public est `modulate.ch`. Écoute : `0.0.0.0` + `PORT` Infomaniak. Ne pas écraser `PORT` / `HOSTNAME` depuis un fichier env.
+- Un écran Manager déjà correct (`npm start`, port 3000, build avec git pull) : ne rien changer.
+- Ne pas enchaîner des clics SSH/Manager sans preuve (code HTTP + corps JSON).

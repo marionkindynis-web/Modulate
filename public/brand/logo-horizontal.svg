@@ -28,27 +28,17 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.14388762"
-     inkscape:cx="1462.9473"
-     inkscape:cy="173.74671"
-     inkscape:window-width="1463"
-     inkscape:window-height="456"
-     inkscape:window-x="104"
-     inkscape:window-y="33"
+     inkscape:zoom="0.18312561"
+     inkscape:cx="1305.1151"
+     inkscape:cy="243.0026"
+     inkscape:window-width="1830"
+     inkscape:window-height="807"
+     inkscape:window-x="47"
+     inkscape:window-y="49"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs519759">
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient248935"
-       id="linearGradient488389"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(0.30181614,-0.27813523)"
-       x1="325.76294"
-       y1="225.21124"
-       x2="337.40945"
-       y2="225.21124" />
     <linearGradient
        id="linearGradient248935"
        gradientUnits="userSpaceOnUse"
@@ -76,102 +66,117 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient248935"
-       id="linearGradient475766-8-4-7"
+       id="linearGradient475766-8-4-7-7"
        x1="364.1593"
        y1="223.51901"
        x2="373.9379"
        y2="223.51901"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(7.1302988,0.25282031,-0.25282031,7.1302988,-2514.3591,-1586.1304)" />
+       gradientTransform="matrix(6.9668141,0.24702356,-0.24702356,6.9668141,-2437.3052,-1550.95)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient248935"
+       id="linearGradient749"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0.30181614,-0.27813523)"
+       x1="325.76294"
+       y1="225.21124"
+       x2="337.40945"
+       y2="225.21124" />
   </defs>
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <path
-       id="rect373421-6-0-1-9-8-7-2-6-0-4"
-       style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#03031c;fill-opacity:0.92549;stroke-width:14.8939;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
-       d="m 121.74899,43.309612 25.76581,-0.596318 14.24599,52.86567 -25.14104,0.91129 z"
-       sodipodi:nodetypes="ccccc"
-       inkscape:transform-center-x="97.293948"
-       inkscape:transform-center-y="0.83642703" />
-    <path
-       id="rect373788-6-4-8-8"
-       style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#03031c;fill-opacity:0.92549;stroke-width:17.3783;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
-       d="m 74.045168,143.53868 32.581892,-12.70721 65.21081,-5.48591 -30.56097,15.60025 z"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       id="rect373788-4-8-9-6-9"
-       style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#03031c;fill-opacity:0.92549;stroke-width:17.3783;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
-       d="m 41.301447,157.32663 29.583189,-12.58995 68.765884,-2.47071 -18.80434,8.98925 z"
-       sodipodi:nodetypes="ccccc" />
-    <g
-       id="g460182-9-8-7-0"
-       transform="matrix(6.1057717,0.33198482,-0.33198482,6.1057717,-1816.0241,-1367.3376)">
-      <path
-         id="rect373421-6-0-1-9-0-5-0-9-2-3"
-         style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#03031c;fill-opacity:0.92549;stroke-width:2.43573;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
-         d="m 322.74697,213.70817 5.65367,-0.49845 1.21619,3.51642 -5.56632,0.73012 z"
-         sodipodi:nodetypes="ccccc"
-         inkscape:transform-center-x="32.739298"
-         inkscape:transform-center-y="-1.4615758" />
-      <path
-         id="rect373421-6-0-1-9-0-5-0-9-2-3-6"
-         style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#03031c;fill-opacity:0.92549;stroke-width:2.43573;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
-         d="m 324.44217,218.6283 5.6077,-0.67916 1.25881,3.79035 -5.56251,0.63674 z"
-         sodipodi:nodetypes="ccccc"
-         inkscape:transform-center-x="32.739298"
-         inkscape:transform-center-y="-1.4615758" />
-      <path
-         id="rect373421-6-0-1-5-7-3-1-3-8"
-         style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:url(#linearGradient488389);fill-opacity:1;stroke-width:2.43573;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
-         d="m 326.02795,223.56774 10.54283,-1.00361 1.14049,3.37514 -10.38367,1.3628 z"
-         sodipodi:nodetypes="ccccc"
-         inkscape:transform-center-x="32.739298"
-         inkscape:transform-center-y="-1.4615758" />
-    </g>
-    <path
-       id="rect373421-6-97-0-8-2-6-1"
-       style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#03031c;fill-opacity:0.92549;stroke-width:17.3783;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
-       d="M 17.023407,71.693345 80.597813,45.630656 87.090996,69.003745 23.683615,95.405584 Z"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       id="rect373421-6-97-0-8-1-9-6-6"
-       style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:url(#linearGradient475766-8-4-7);fill-opacity:1;stroke-width:17.3783;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
-       d="M 25.607611,102.1636 89.104713,75.992925 95.814082,99.178614 32.269806,125.87534 Z"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       id="rect373421-6-97-0-8-1-1-7-1-4-7"
-       style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#02021c;fill-opacity:0.92549;stroke-width:17.3783;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
-       d="M 34.113584,132.98706 64.10584,121.1775 70.769854,144.18781 40.787465,156.68765 Z"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       id="rect373421-6-97-0-8-1-1-7-1-4-3-8"
-       style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#02021c;fill-opacity:0.92549;stroke-width:17.3783;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
-       d="M 67.323812,119.43711 98.27401,106.79323 104.83463,129.819 74.025635,142.34846 Z"
-       sodipodi:nodetypes="ccccc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:78.8702px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#02021c;fill-opacity:0.92549;stroke-width:0.982841;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:stroke fill markers"
-       x="179.90024"
-       y="104.16402"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:71.2635px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#02021c;fill-opacity:0.92549;stroke-width:0.888051;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:stroke fill markers"
+       x="197.86577"
+       y="102.79347"
        id="text494031-1"><tspan
          sodipodi:role="line"
          id="tspan494029-2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:78.8702px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.982841"
-         x="179.90024"
-         y="104.16402">Modulate</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:71.2635px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.888051"
+         x="197.86577"
+         y="102.79347">Modulate</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:98.2247px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#02021c;fill-opacity:0.92549;stroke-width:1.22404;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:stroke fill markers"
-       x="182.60344"
-       y="137.13518"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:90.5755px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#02021c;fill-opacity:0.92549;stroke-width:1.12872;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:stroke fill markers"
+       x="198.54723"
+       y="134.26915"
        id="text514578"
        transform="scale(0.99850654,1.0014957)"><tspan
          sodipodi:role="line"
          id="tspan514576"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.361px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.22404"
-         x="182.60344"
-         y="137.13518">ADAPT. OPTIMIZE. ELEVATE.</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.386px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.12872"
+         x="198.54723"
+         y="134.26915">ADAPT. OPTIMIZE. ELEVATE.</tspan></text>
+    <g
+       id="g798"
+       transform="translate(-5.7792753,-2.8896377)">
+      <path
+         id="rect373421-6-0-1-9-8-7-2-6-0-4-8"
+         style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#03031c;fill-opacity:0.92549;stroke-width:14.5527;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
+         d="m 138.36188,41.13002 25.17504,-0.582657 13.91932,51.224052 -24.56454,1.319889 z"
+         sodipodi:nodetypes="ccccc"
+         inkscape:transform-center-x="95.063187"
+         inkscape:transform-center-y="0.81724993" />
+      <path
+         id="rect373788-6-4-8-8-1"
+         style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#03031c;fill-opacity:0.92549;stroke-width:16.9798;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
+         d="m 91.751761,139.06095 31.834899,-12.41576 61.36816,-4.84399 -23.13411,11.87162 z"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         id="rect373788-4-8-9-6-9-5"
+         style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#03031c;fill-opacity:0.92549;stroke-width:16.9798;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
+         d="m 59.758851,152.53283 28.904922,-12.30134 71.411317,-5.69626 -23.83581,12.14794 z"
+         sodipodi:nodetypes="ccccc" />
+      <g
+         id="g460182-9-8-7-0-3"
+         transform="matrix(5.9657774,0.32437301,-0.32437301,5.9657774,-1754.9816,-1337.1739)"
+         style="font-weight:normal;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';fill:#03031c;fill-opacity:0.92549;stroke-width:10.434;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke">
+        <path
+           id="rect373421-6-0-1-9-0-5-0-9-2-3-5"
+           style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#03031c;fill-opacity:0.92549;stroke-width:2.43573;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
+           d="m 322.74697,213.70817 5.65367,-0.49845 1.21619,3.51642 -5.56632,0.73012 z"
+           sodipodi:nodetypes="ccccc"
+           inkscape:transform-center-x="32.739298"
+           inkscape:transform-center-y="-1.4615758" />
+        <path
+           id="rect373421-6-0-1-9-0-5-0-9-2-3-6-4"
+           style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#03031c;fill-opacity:0.92549;stroke-width:2.43573;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
+           d="m 324.44217,218.6283 5.6077,-0.67916 1.25881,3.79035 -5.56251,0.63674 z"
+           sodipodi:nodetypes="ccccc"
+           inkscape:transform-center-x="32.739298"
+           inkscape:transform-center-y="-1.4615758" />
+        <path
+           id="rect373421-6-0-1-5-7-3-1-3-8-3"
+           style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:url(#linearGradient749);fill-opacity:1;stroke-width:2.43573;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
+           d="m 326.02795,223.56774 10.33902,-1.16569 1.08741,3.59452 -10.12678,1.3055 z"
+           sodipodi:nodetypes="ccccc"
+           inkscape:transform-center-x="32.739298"
+           inkscape:transform-center-y="-1.4615758" />
+      </g>
+      <path
+         id="rect373421-6-97-0-8-2-6-1-6"
+         style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#03031c;fill-opacity:0.92549;stroke-width:16.9798;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
+         d="m 36.03742,68.862882 62.116779,-25.465038 6.344341,22.83711 -61.953652,25.79652 z"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         id="rect373421-6-97-0-8-1-9-6-6-5"
+         style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:url(#linearGradient475766-8-4-7-7);fill-opacity:1;stroke-width:16.9798;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
+         d="M 44.424834,98.634512 106.46605,73.063924 113.02163,95.718018 50.934299,121.80266 Z"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         id="rect373421-6-97-0-8-1-1-7-1-4-7-9"
+         style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#02021c;fill-opacity:0.92549;stroke-width:16.9798;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
+         d="m 52.735805,128.7513 29.304524,-11.53875 6.511237,22.48267 -29.294912,12.21327 z"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         id="rect373421-6-97-0-8-1-1-7-1-4-3-8-5"
+         style="font-weight:bold;font-size:23.2279px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';fill:#02021c;fill-opacity:0.92549;stroke-width:16.9798;stroke-linecap:square;stroke-dashoffset:16;stroke-opacity:0.92549;paint-order:fill markers stroke"
+         d="m 85.254277,115.72125 30.170823,-12.56321 6.41023,22.49784 -30.102565,12.24221 z"
+         sodipodi:nodetypes="ccccc" />
+    </g>
   </g>
 </svg>
