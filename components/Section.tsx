@@ -25,7 +25,7 @@ export function PageIntro({
     <header className="max-w-3xl">
       <p className="type-kicker">{kicker}</p>
       <span className="accent-rule mt-5" />
-      <h1 className="type-display-xl mt-6">{title}</h1>
+      <h1 className="type-display-xl mt-6 text-ink">{title}</h1>
       <p className="type-body-lg mt-6 max-w-xl text-muted">{intro}</p>
     </header>
   );
@@ -51,7 +51,7 @@ export function SectionHeading({
         ) : null}
         <span>{kicker}</span>
       </p>
-      <h2 className="type-display-lg mt-4">{title}</h2>
+      <h2 className="type-display-lg mt-4 text-ink">{title}</h2>
       {intro ? <p className="type-body mt-5 max-w-xl text-muted">{intro}</p> : null}
     </div>
   );

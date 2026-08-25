@@ -43,7 +43,7 @@ export function HomeHero() {
           <h1 className="type-display-xl mt-8 text-white motion-rise motion-rise-delay-1">
             {t("title")}
           </h1>
-          <p className="type-body-lg mt-6 max-w-xl text-white/65 motion-rise motion-rise-delay-2">
+          <p className="type-body-lg mt-6 max-w-xl text-white/85 motion-rise motion-rise-delay-2">
             {t("intro")}
           </p>
           <div className="motion-rise motion-rise-delay-3 mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
