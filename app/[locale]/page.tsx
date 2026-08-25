@@ -1,6 +1,5 @@
 import { getTranslations } from "next-intl/server";
 import { ButtonLink } from "@/components/Button";
-import { Card } from "@/components/Card";
 import { ComingSoon } from "@/components/ComingSoon";
 import { PlaceholderMedia } from "@/components/PlaceholderMedia";
 import { PageIntro, Section } from "@/components/Section";
@@ -22,9 +21,9 @@ export default async function HomePage({ params }: Props) {
   if (site.comingSoon) {
     return <ComingSoon />;
   }
+
   const t = await getTranslations("Home");
-  const services = await getTranslations("Services");
-  const common = await getTranslations("Common");
+  const whyKeys = ["method", "expertise", "proximity", "transparency", "results"] as const;
 
   return (
     <>
@@ -33,8 +32,8 @@ export default async function HomePage({ params }: Props) {
           <div className="lg:col-span-7">
             <PageIntro kicker={t("kicker")} title={t("title")} intro={t("intro")} />
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="/devis">{t("primaryCta")}</ButtonLink>
-              <ButtonLink href="/services" variant="secondary">
+              <ButtonLink href="/contact">{t("primaryCta")}</ButtonLink>
+              <ButtonLink href="/notre-approche" variant="secondary">
                 {t("secondaryCta")}
               </ButtonLink>
             </div>
@@ -47,23 +46,72 @@ export default async function HomePage({ params }: Props) {
 
       <Section className="bg-surface">
         <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
-          {t("servicesKicker")}
+          {t("problemKicker")}
         </p>
-        <h2 className="mt-4 max-w-2xl text-[36px] leading-11">{t("servicesTitle")}</h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {(["adapt", "optimize", "elevate"] as const).map((key) => (
-            <Card
-              key={key}
-              kicker={services(`items.${key}.kicker`)}
-              title={services(`items.${key}.title`)}
-              action={
-                <Link href="/services" className="text-[15px] font-medium text-ink">
-                  {common("learnMore")} →
-                </Link>
-              }
-            >
-              <p>{services(`items.${key}.body`)}</p>
-            </Card>
+        <h2 className="mt-4 max-w-3xl text-[36px] leading-11">{t("problemTitle")}</h2>
+        <p className="mt-6 max-w-2xl text-copy">{t("problemBody")}</p>
+      </Section>
+
+      <Section>
+        <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
+          {t("improveKicker")}
+        </p>
+        <h2 className="mt-4 max-w-2xl text-[36px] leading-11">{t("improveTitle")}</h2>
+        <div className="mt-10 grid gap-10 md:grid-cols-2">
+          <div>
+            <h3 className="font-display text-[28px] leading-9 text-ink">
+              {t("improveImageTitle")}
+            </h3>
+            <p className="mt-3 text-copy">{t("improveImageBody")}</p>
+          </div>
+          <div>
+            <h3 className="font-display text-[28px] leading-9 text-ink">
+              {t("improveWorkTitle")}
+            </h3>
+            <p className="mt-3 text-copy">{t("improveWorkBody")}</p>
+          </div>
+        </div>
+      </Section>
+
+      <Section className="bg-surface">
+        <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
+          {t("methodKicker")}
+        </p>
+        <h2 className="mt-4 max-w-2xl text-[36px] leading-11">{t("methodTitle")}</h2>
+        <p className="mt-6 max-w-2xl text-copy">{t("methodBody")}</p>
+        <div className="mt-8">
+          <ButtonLink href="/notre-approche" variant="secondary">
+            {t("methodCta")}
+          </ButtonLink>
+        </div>
+      </Section>
+
+      <Section>
+        <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
+          {t("workKicker")}
+        </p>
+        <h2 className="mt-4 max-w-2xl text-[36px] leading-11">{t("workTitle")}</h2>
+        <p className="mt-6 max-w-2xl text-copy">{t("workIntro")}</p>
+        <div className="mt-8">
+          <Link href="/realisations" className="text-[15px] font-medium text-ink">
+            {t("workCta")} →
+          </Link>
+        </div>
+      </Section>
+
+      <Section className="bg-surface">
+        <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
+          {t("whyKicker")}
+        </p>
+        <h2 className="mt-4 max-w-2xl text-[36px] leading-11">{t("whyTitle")}</h2>
+        <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {whyKeys.map((key) => (
+            <div key={key}>
+              <h3 className="font-display text-[22px] leading-8 text-ink">
+                {t(`whyItems.${key}.title`)}
+              </h3>
+              <p className="mt-2 text-copy">{t(`whyItems.${key}.body`)}</p>
+            </div>
           ))}
         </div>
       </Section>
@@ -73,7 +121,7 @@ export default async function HomePage({ params }: Props) {
           <h2 className="text-[36px] leading-11 text-white">{t("ctaTitle")}</h2>
           <p className="mt-4 max-w-2xl text-white/80">{t("ctaBody")}</p>
           <div className="mt-8">
-            <ButtonLink href="/devis" variant="secondary">
+            <ButtonLink href="/contact" variant="secondary">
               {t("ctaButton")}
             </ButtonLink>
           </div>

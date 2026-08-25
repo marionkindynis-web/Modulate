@@ -5,10 +5,10 @@ import { site } from "@/lib/site";
 
 const allPaths: Pathname[] = [
   "/",
-  "/services",
+  "/notre-approche",
+  "/expertise",
   "/a-propos",
   "/realisations",
-  "/devis",
   "/contact",
   "/mentions-legales",
   "/politique-de-confidentialite",

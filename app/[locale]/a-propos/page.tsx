@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
-import { PlaceholderMedia } from "@/components/PlaceholderMedia";
+import { ButtonLink } from "@/components/Button";
 import { PageIntro, Section } from "@/components/Section";
+import { site } from "@/lib/site";
 import { resolveLocale } from "@/lib/locale";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -16,16 +17,34 @@ export default async function AboutPage({ params }: Props) {
   const t = await getTranslations("About");
 
   return (
-    <Section>
-      <div className="grid gap-12 lg:grid-cols-12">
-        <div className="lg:col-span-7">
-          <PageIntro kicker={t("kicker")} title={t("title")} intro={t("intro")} />
-          <p className="mt-6 max-w-2xl">{t("body")}</p>
+    <>
+      <Section>
+        <PageIntro kicker={t("kicker")} title={t("title")} intro={t("intro")} />
+      </Section>
+
+      <Section className="bg-surface">
+        <h2 className="max-w-2xl text-[36px] leading-11">{t("whyTitle")}</h2>
+        <p className="mt-6 max-w-2xl text-copy">{t("whyBody")}</p>
+      </Section>
+
+      <Section>
+        <h2 className="max-w-2xl text-[36px] leading-11">{t("peopleTitle")}</h2>
+        <p className="mt-6 max-w-2xl text-copy">{t("peopleBody")}</p>
+        <p className="mt-3 text-sm text-muted">{t("peopleNote")}</p>
+      </Section>
+
+      <Section className="bg-surface">
+        <h2 className="max-w-2xl text-[36px] leading-11">{t("complementTitle")}</h2>
+        <p className="mt-6 max-w-2xl text-copy">{t("complementBody")}</p>
+        <p className="mt-8 text-sm text-muted">{site.taglineLockup}</p>
+      </Section>
+
+      <Section>
+        <h2 className="max-w-2xl text-[36px] leading-11">{t("ctaTitle")}</h2>
+        <div className="mt-8">
+          <ButtonLink href="/contact">{t("ctaButton")}</ButtonLink>
         </div>
-        <div className="lg:col-span-5">
-          <PlaceholderMedia />
-        </div>
-      </div>
-    </Section>
+      </Section>
+    </>
   );
 }

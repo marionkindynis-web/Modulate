@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Logo } from "@/components/Logo";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { navItems } from "@/lib/site";
+import { navCta, navItems } from "@/lib/site";
 
 export function Header() {
   const t = useTranslations("Nav");
@@ -22,20 +22,15 @@ export function Header() {
               const active =
                 item.href === "/"
                   ? pathname === "/"
-                  : pathname === item.href;
-              const isQuote = item.key === "quote";
+                  : pathname === item.href || pathname.startsWith(`${item.href}/`);
 
               return (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={
-                      isQuote
-                        ? "ml-2 inline-flex min-h-11 items-center rounded-md bg-ink px-4 text-[15px] font-medium text-white transition-colors duration-200 hover:bg-[#12122a]"
-                        : `inline-flex min-h-11 items-center px-3 text-[15px] font-medium transition-colors duration-200 ${
-                            active ? "text-ink" : "text-muted hover:text-ink"
-                          }`
-                    }
+                    className={`inline-flex min-h-11 items-center px-3 text-[15px] font-medium transition-colors duration-200 ${
+                      active ? "text-ink" : "text-muted hover:text-ink"
+                    }`}
                     aria-current={active ? "page" : undefined}
                   >
                     {t(item.key)}
@@ -43,6 +38,14 @@ export function Header() {
                 </li>
               );
             })}
+            <li>
+              <Link
+                href={navCta.href}
+                className="ml-2 inline-flex min-h-11 items-center rounded-md bg-ink px-4 text-[15px] font-medium text-white transition-colors duration-200 hover:bg-[#12122a]"
+              >
+                {t(navCta.key)}
+              </Link>
+            </li>
           </ul>
         </nav>
         <div className="flex items-center gap-2">
@@ -81,6 +84,15 @@ export function Header() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href={navCta.href}
+                className="mt-2 flex min-h-11 items-center justify-center rounded-md bg-ink text-[15px] font-medium text-white"
+                onClick={() => setOpen(false)}
+              >
+                {t(navCta.key)}
+              </Link>
+            </li>
           </ul>
         </nav>
       ) : null}

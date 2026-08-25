@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/Button";
-import { Link } from "@/i18n/navigation";
 
 const fieldClass =
   "mt-2 h-12 w-full rounded-md border border-line bg-surface px-4 text-base text-copy placeholder:text-muted";
@@ -99,13 +98,10 @@ export function ContactForm() {
           {t("error")}
         </p>
       ) : null}
-      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+      <div className="mt-6">
         <Button type="submit" disabled={status === "submitting"} className="w-full sm:w-auto">
           {status === "submitting" ? t("submitting") : t("submit")}
         </Button>
-        <Link href="/devis" className="text-[15px] font-medium text-ink">
-          {t("quoteLink")} →
-        </Link>
       </div>
     </form>
   );

@@ -4,11 +4,12 @@
   },
   "Nav": {
     "home": "Accueil",
-    "services": "Services",
+    "approach": "Notre approche",
+    "expertise": "Expertise",
     "about": "À propos",
     "work": "Réalisations",
-    "quote": "Devis",
     "contact": "Contact",
+    "cta": "Parlons de votre projet",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
     "mainNav": "Navigation principale",
@@ -26,7 +27,7 @@
   "Common": {
     "learnMore": "En savoir plus",
     "placeholder": "Contenu placeholder — à remplacer.",
-    "indicative": "Fourchette indicative, hors TVA, non contractuelle.",
+    "todoContent": "TODO / CONTENT NEEDED",
     "imageAltPlaceholder": "Visuel placeholder Modulate"
   },
   "ComingSoon": {
@@ -56,201 +57,199 @@
     "location": "Genève, Suisse"
   },
   "Home": {
-    "metaTitle": "Modulate — Adapt. Optimize. Elevate.",
-    "metaDescription": "Modulate améliore l’existant. Nous adaptons, optimisons et élevons vos dispositifs pour plus de clarté et de performance.",
+    "metaTitle": "Modulate — Faites évoluer votre entreprise, sans tout bouleverser",
+    "metaDescription": "Modulate combine stratégie, design et technologie pour améliorer votre présence digitale et vos systèmes de travail.",
     "kicker": "Modulate",
-    "title": "Modulate améliore l’existant.",
-    "intro": "Nous intervenons sur ce qui est déjà en place : processus, outils, organisation. Moins de rupture, plus de précision. Placeholder — texte à remplacer.",
-    "primaryCta": "Demander un devis",
-    "secondaryCta": "Découvrir les services",
-    "servicesKicker": "Services",
-    "servicesTitle": "Trois leviers, un même fil.",
+    "title": "Faites évoluer votre entreprise, sans tout bouleverser.",
+    "intro": "Modulate combine stratégie, design et technologie pour améliorer votre présence digitale et vos systèmes de travail.",
+    "primaryCta": "Parlons de votre projet",
+    "secondaryCta": "Notre approche",
+    "problemKicker": "Le problème",
+    "problemTitle": "L’entreprise évolue. Son image, ses outils et ses flux doivent suivre.",
+    "problemBody": "Trop de temps passé sur des tâches périphériques, des systèmes datés, des workflows inefficaces ou une image qui ne reflète plus l’entreprise.",
+    "improveKicker": "Ce que nous améliorons",
+    "improveTitle": "Deux terrains, une même méthode.",
+    "improveImageTitle": "Votre image",
+    "improveImageBody": "Présence digitale, identité, design et sites adaptés à la réalité de l’entreprise.",
+    "improveWorkTitle": "Votre façon de travailler",
+    "improveWorkBody": "Workflows, automatisation, intégrations et applications — là où cela résout un vrai problème.",
+    "methodKicker": "Méthode",
+    "methodTitle": "Comprendre avant d’améliorer.",
+    "methodBody": "Observer, écouter, comprendre, questionner, identifier, prioriser, construire, améliorer. Parfois, la bonne recommandation est de ne pas toucher à ce qui fonctionne déjà.",
+    "methodCta": "Découvrir l’approche",
     "workKicker": "Réalisations",
-    "workTitle": "Des interventions ciblées.",
+    "workTitle": "Des preuves, pas des slogans.",
+    "workIntro": "Chaque intervention part du contexte. Les cas ci-dessous sont des placeholders jusqu’aux projets documentés.",
     "workCta": "Voir les réalisations",
-    "ctaTitle": "Obtenez une fourchette en quelques choix.",
-    "ctaBody": "Le configurateur estime une fourchette selon votre périmètre. Les montants actuels sont des placeholders.",
-    "ctaButton": "Estimer un projet"
-  },
-  "Services": {
-    "metaTitle": "Services — Modulate",
-    "metaDescription": "Adapter, optimiser et élever l’existant : les services Modulate, à préciser.",
-    "kicker": "Services",
-    "title": "Ce que nous améliorons.",
-    "intro": "Placeholder. Trois familles d’intervention, à affiner avec le contenu définitif.",
-    "items": {
-      "adapt": {
-        "kicker": "Adapt",
-        "title": "Adapter l’existant",
-        "body": "Recalibrer ce qui est déjà là pour qu’il serve mieux le quotidien. Placeholder."
+    "whyKicker": "Pourquoi Modulate",
+    "whyTitle": "Méthode, expertise, proximité.",
+    "whyItems": {
+      "method": {
+        "title": "Méthode",
+        "body": "Nous ne proposons pas de solution avant d’avoir compris le problème."
       },
-      "optimize": {
-        "kicker": "Optimize",
-        "title": "Optimiser les flux",
-        "body": "Simplifier les enchaînements, réduire les frictions, clarifier les responsabilités. Placeholder."
+      "expertise": {
+        "title": "Expertise",
+        "body": "Design, marque, développement et automatisation — complémentaires, pas empilés."
       },
-      "elevate": {
-        "kicker": "Elevate",
-        "title": "Élever le niveau",
-        "body": "Installer un standard plus net, plus tenable, plus lisible pour les équipes. Placeholder."
+      "proximity": {
+        "title": "Proximité",
+        "body": "Relation directe, exigence et accessibilité, sans posture d’agence générique."
+      },
+      "transparency": {
+        "title": "Transparence",
+        "body": "Nous expliquons le raisonnement et ce qui mérite — ou non — d’être changé."
+      },
+      "results": {
+        "title": "Résultats",
+        "body": "Plus de clarté, des flux plus fluides, une image plus maîtrisée."
       }
-    }
+    },
+    "ctaTitle": "Parlons de votre projet.",
+    "ctaBody": "Expliquez-nous votre situation. Nous verrons ensemble ce qui mérite réellement d’être amélioré.",
+    "ctaButton": "Nous contacter"
+  },
+  "Approach": {
+    "metaTitle": "Notre approche — Modulate",
+    "metaDescription": "Nous ne commençons pas par la solution. Nous commençons par comprendre.",
+    "kicker": "Notre approche",
+    "title": "Nous ne commençons pas par la solution. Nous commençons par comprendre.",
+    "intro": "Chaque entreprise est différente. Il n’y a pas de solution universelle. Nous partons de votre réalité, identifions ce qui mérite d’être amélioré, puis choisissons l’outil adapté.",
+    "methodKicker": "La méthode",
+    "methodTitle": "Huit étapes, un fil conducteur.",
+    "steps": {
+      "observe": { "title": "Observer", "body": "Voir comment l’entreprise fonctionne réellement." },
+      "listen": { "title": "Écouter", "body": "Entendre les enjeux métier, pas seulement les demandes techniques." },
+      "understand": { "title": "Comprendre", "body": "Clarifier le vrai problème avant d’imaginer la réponse." },
+      "question": { "title": "Questionner", "body": "Tester les hypothèses et ce qui semble évident." },
+      "identify": { "title": "Identifier", "body": "Repérer ce qui bloque, ce qui freine, ce qui mérite d’évoluer." },
+      "prioritize": { "title": "Prioriser", "body": "Choisir ce qui a le plus d’impact, sans tout ouvrir en même temps." },
+      "build": { "title": "Construire", "body": "Mettre en place la solution adaptée — design, site, système ou automatisation." },
+      "improve": { "title": "Améliorer", "body": "Affiner dans le temps, sans rupture inutile." }
+    },
+    "keepKicker": "Quand on ne change pas",
+    "keepTitle": "Parfois, la bonne recommandation est de ne rien toucher.",
+    "keepBody": "Si un système fonctionne déjà, nous le disons. Améliorer sans bouleverser inutilement fait partie de la méthode.",
+    "ctaTitle": "Expliquez-nous votre situation.",
+    "ctaButton": "Parlons de votre projet"
+  },
+  "Expertise": {
+    "metaTitle": "Expertise — Modulate",
+    "metaDescription": "Présence digitale et systèmes & automatisation : deux terrains, une méthode.",
+    "kicker": "Expertise",
+    "title": "Une méthode, deux terrains d’intervention.",
+    "intro": "La diversité des capacités n’est pas une liste de services isolés. C’est la conséquence d’une méthode : comprendre le problème avant de choisir la solution.",
+    "digitalKicker": "01 — Présence digitale",
+    "digitalTitle": "Améliorer la façon dont l’entreprise se présente.",
+    "digitalItems": {
+      "branding": "Branding",
+      "identity": "Identité visuelle",
+      "direction": "Direction créative",
+      "web": "Web design",
+      "sites": "Sites sur mesure",
+      "templates": "Templates / one-page pour les besoins simples"
+    },
+    "systemsKicker": "02 — Systèmes & automatisation",
+    "systemsTitle": "Améliorer la façon dont l’entreprise travaille.",
+    "systemsItems": {
+      "workflows": "Analyse de workflows",
+      "automation": "Automatisation",
+      "integration": "Intégration d’outils",
+      "apps": "Applications sur mesure",
+      "ai": "IA lorsqu’elle résout réellement un problème"
+    },
+    "entryKicker": "Offre d’entrée",
+    "entryTitle": "Accessibilité, pas low-cost.",
+    "entryBody": "Templates et sites one-page pour les besoins simples qui ne justifient pas un projet sur mesure. Un mécanisme d’accès, pas un positionnement discount.",
+    "aiNote": "L’IA est un outil, pas l’identité de Modulate.",
+    "ctaTitle": "Vous ne savez pas encore ce qu’il faut améliorer ?",
+    "ctaBody": "C’est normal. Commençons par en parler.",
+    "ctaButton": "Nous contacter"
   },
   "About": {
     "metaTitle": "À propos — Modulate",
-    "metaDescription": "Modulate : une pratique sobre, tournée vers l’amélioration de l’existant.",
+    "metaDescription": "Les personnes derrière Modulate : relation directe, expertise complémentaire, exigence et accessibilité.",
     "kicker": "À propos",
-    "title": "Une pratique de précision.",
-    "intro": "Placeholder. Positionnement, méthode et équipe à compléter.",
-    "body": "Modulate part de ce qui existe déjà. Nous n’ajoutons de la complexité que lorsqu’elle est utile. Cette page accueillera bientôt le récit de l’entreprise, les personnes et la manière de travailler."
+    "title": "Les personnes derrière Modulate.",
+    "intro": "Relation directe, expertise complémentaire, authenticité et rigueur. Pas de langage d’« agency team » générique.",
+    "whyTitle": "Pourquoi Modulate existe",
+    "whyBody": "Aider les entreprises à faire évoluer ce qui existe déjà — présence digitale, outils, systèmes de travail — sans rupture inutile.",
+    "peopleTitle": "L’équipe",
+    "peopleBody": "TODO / CONTENT NEEDED — noms, rôles, photos et courtes bios à fournir.",
+    "peopleNote": "Placeholder. Les profils seront ajoutés sans invention.",
+    "complementTitle": "Complémentarité",
+    "complementBody": "Compréhension design / marque d’un côté, développement / automatisation de l’autre. Une même exigence : précision et exécution.",
+    "ctaTitle": "Parlons de votre projet.",
+    "ctaButton": "Contact"
   },
   "Work": {
     "metaTitle": "Réalisations — Modulate",
-    "metaDescription": "Interventions Modulate : études de cas à venir.",
+    "metaDescription": "Preuves de travail Modulate : contexte, problème, décision, solution, résultat.",
     "kicker": "Réalisations",
-    "title": "Interventions à documenter.",
-    "intro": "Trois cartes placeholder. Noms, visuels et résultats seront remplacés.",
+    "title": "La diversité des projets est une force.",
+    "intro": "Elle montre l’adaptation, pas une esthétique imposée. Les cas ci-dessous sont des placeholders structurés jusqu’aux projets réels.",
+    "structureNote": "Chaque cas documente : contexte, problème, ce que nous avons compris, décision, solution, résultat.",
     "items": {
       "one": {
-        "kicker": "Placeholder",
+        "kicker": "TODO / CONTENT NEEDED",
         "title": "Cas 01 — à nommer",
-        "body": "Contexte, action, résultat. Texte à remplacer."
+        "context": "Contexte — à compléter",
+        "problem": "Problème — à compléter",
+        "understood": "Ce que Modulate a compris — à compléter",
+        "decision": "Décision — à compléter",
+        "solution": "Solution — à compléter",
+        "result": "Résultat — à compléter"
       },
       "two": {
-        "kicker": "Placeholder",
+        "kicker": "TODO / CONTENT NEEDED",
         "title": "Cas 02 — à nommer",
-        "body": "Contexte, action, résultat. Texte à remplacer."
+        "context": "Contexte — à compléter",
+        "problem": "Problème — à compléter",
+        "understood": "Ce que Modulate a compris — à compléter",
+        "decision": "Décision — à compléter",
+        "solution": "Solution — à compléter",
+        "result": "Résultat — à compléter"
       },
       "three": {
-        "kicker": "Placeholder",
+        "kicker": "TODO / CONTENT NEEDED",
         "title": "Cas 03 — à nommer",
-        "body": "Contexte, action, résultat. Texte à remplacer."
+        "context": "Contexte — à compléter",
+        "problem": "Problème — à compléter",
+        "understood": "Ce que Modulate a compris — à compléter",
+        "decision": "Décision — à compléter",
+        "solution": "Solution — à compléter",
+        "result": "Résultat — à compléter"
       }
     }
   },
   "Quote": {
     "metaTitle": "Devis — Modulate",
-    "metaDescription": "Estimez une fourchette de prix selon vos choix, puis envoyez votre demande à Modulate.",
+    "metaDescription": "Page devis réservée. Contactez Modulate pour parler de votre projet.",
     "kicker": "Devis",
-    "title": "Estimez une fourchette.",
-    "intro": "Répondez à quelques questions. Les montants affichés sont des placeholders, indicatifs et hors TVA.",
-    "progress": "Étape {current} sur {total}",
-    "back": "Retour",
-    "next": "Continuer",
-    "estimateKicker": "Estimation",
-    "rangeLabel": "Fourchette",
-    "manualTitle": "Sur devis",
-    "manualBody": "Cette combinaison demande un échange. Envoyez-nous le détail, nous reviendrons vers vous.",
-    "incomplete": "La fourchette se précise à chaque choix.",
-    "disclaimer": "Fourchette indicative, hors TVA, non contractuelle. Grille placeholder.",
-    "contactTitle": "Vos coordonnées",
-    "contactIntro": "Nous recevons vos choix et la fourchette calculée.",
-    "name": "Nom",
-    "email": "Adresse e-mail",
-    "organisation": "Organisation",
-    "organisationPlaceholder": "Entreprise ou équipe",
-    "message": "Message (optionnel)",
-    "messagePlaceholder": "Contexte utile, contraintes, délai…",
-    "submit": "Envoyer la demande",
-    "submitting": "Envoi en cours…",
-    "successTitle": "Demande envoyée.",
-    "successBody": "Nous avons bien reçu vos choix. Nous revenons vers vous rapidement.",
-    "dryRun": "Mode local : l’e-mail n’a pas été envoyé (SMTP non configuré).",
-    "error": "L’envoi n’a pas abouti. Réessayez ou passez par la page Contact.",
-    "summary": "Récapitulatif",
-    "steps": {
-      "object": {
-        "title": "Que souhaitez-vous améliorer ?",
-        "options": {
-          "process": {
-            "label": "Un processus",
-            "description": "Un flux de travail déjà identifié."
-          },
-          "tools": {
-            "label": "Des outils",
-            "description": "La stack et ses usages au quotidien."
-          },
-          "organisation": {
-            "label": "L’organisation",
-            "description": "Rôles, rituels, coordination."
-          },
-          "digital": {
-            "label": "Un parcours digital",
-            "description": "Site, parcours, interfaces existantes."
-          }
-        }
-      },
-      "scope": {
-        "title": "Quel est le périmètre ?",
-        "options": {
-          "flow": {
-            "label": "Un flux",
-            "description": "Une chaîne courte, un cas d’usage."
-          },
-          "team": {
-            "label": "Une équipe",
-            "description": "Plusieurs personnes, un même contexte."
-          },
-          "org": {
-            "label": "L’organisation",
-            "description": "Plusieurs équipes ou un dispositif transverse."
-          }
-        }
-      },
-      "maturity": {
-        "title": "Où en êtes-vous aujourd’hui ?",
-        "options": {
-          "structured": {
-            "label": "Déjà structuré",
-            "description": "L’existant est documenté et utilisé."
-          },
-          "partial": {
-            "label": "Partiel",
-            "description": "Des bases, encore des angles morts."
-          },
-          "build": {
-            "label": "À construire",
-            "description": "Peu de formalisation à ce jour."
-          }
-        }
-      },
-      "timeline": {
-        "title": "Quel rythme visez-vous ?",
-        "options": {
-          "flexible": {
-            "label": "Flexible",
-            "description": "Le calendrier peut s’adapter."
-          },
-          "standard": {
-            "label": "Environ 3 mois",
-            "description": "Une fenêtre claire, sans urgence extrême."
-          },
-          "urgent": {
-            "label": "Urgent",
-            "description": "Délai très court — traité sur devis."
-          }
-        }
-      }
-    }
+    "title": "Cette page est réservée.",
+    "intro": "Le configurateur de devis n’est pas actif pour le moment. Expliquez-nous votre situation : nous verrons ensemble la suite.",
+    "cta": "Aller au contact",
+    "reservedNote": "Route conservée pour une prochaine phase."
   },
   "Contact": {
     "metaTitle": "Contact — Modulate",
-    "metaDescription": "Écrivez à Modulate. Nous répondons aux demandes de contact et de collaboration.",
+    "metaDescription": "Expliquez-nous votre situation. Nous verrons ensemble ce qui mérite réellement d’être amélioré.",
     "kicker": "Contact",
-    "title": "Écrivez-nous.",
-    "intro": "Un message suffit. Pour une estimation chiffrée, utilisez plutôt le configurateur de devis.",
-    "quoteLink": "Estimer un projet",
+    "title": "Expliquez-nous votre situation.",
+    "intro": "Nous verrons ensemble ce qui mérite réellement d’être amélioré. Un message suffit.",
     "name": "Nom",
     "email": "Adresse e-mail",
     "message": "Message",
-    "messagePlaceholder": "Votre demande…",
+    "messagePlaceholder": "Votre contexte, vos enjeux, ce que vous souhaitez clarifier…",
     "submit": "Envoyer",
     "submitting": "Envoi en cours…",
     "successTitle": "Message envoyé.",
     "successBody": "Nous vous répondrons dès que possible.",
     "dryRun": "Mode local : l’e-mail n’a pas été envoyé (SMTP non configuré).",
     "error": "L’envoi n’a pas abouti. Merci de réessayer.",
-    "honeypot": "Ne pas remplir"
+    "honeypot": "Ne pas remplir",
+    "location": "Genève, Suisse",
+    "emailLabel": "Écrire à"
   },
   "Legal": {
     "metaTitle": "Mentions légales — Modulate",
@@ -259,34 +258,34 @@
     "title": "Mentions légales",
     "intro": "Les champs ci-dessous sont des placeholders. Ils seront complétés avec les informations officielles, sans valeurs inventées.",
     "publisher": "Éditeur",
-    "publisherBody": "[Raison sociale, forme juridique, siège social — à compléter]",
+    "publisherBody": "TODO / CONTENT NEEDED — raison sociale, forme juridique, siège social.",
     "identifier": "Identification",
-    "identifierBody": "[IDE/UID ou SIRET, registre du commerce — à compléter]",
+    "identifierBody": "TODO / CONTENT NEEDED — IDE/UID, registre du commerce.",
     "director": "Directeur de la publication",
-    "directorBody": "[Nom du représentant — à compléter]",
+    "directorBody": "TODO / CONTENT NEEDED — nom du représentant.",
     "contact": "Contact",
-    "contactBody": "[E-mail et téléphone officiels — à compléter]",
+    "contactBody": "marion@marionweb.ch — autres coordonnées officielles à compléter.",
     "host": "Hébergeur",
     "hostBody": "Infomaniak Network SA, Rue Eugène-Marziano 25, 1227 Genève, Suisse. https://www.infomaniak.com"
   },
   "Privacy": {
     "metaTitle": "Politique de confidentialité — Modulate",
-    "metaDescription": "Traitement des données du formulaire de contact et du configurateur de devis Modulate.",
+    "metaDescription": "Traitement des données des formulaires Modulate.",
     "kicker": "Confidentialité",
     "title": "Politique de confidentialité",
     "intro": "Cette page décrit le traitement des données issues des formulaires. Les durées et le responsable seront confirmés avec les informations légales.",
     "controllerTitle": "Responsable du traitement",
-    "controllerBody": "[Identité de l’éditeur — à compléter]. Contact : [e-mail — à compléter].",
+    "controllerBody": "TODO / CONTENT NEEDED — identité de l’éditeur. Contact : marion@marionweb.ch.",
     "purposeTitle": "Finalité",
-    "purposeBody": "Les données du formulaire de contact et du configurateur de devis (nom, e-mail, organisation, message, choix du devis) sont utilisées uniquement pour répondre à votre demande et établir un échange commercial.",
+    "purposeBody": "Les données du formulaire (nom, e-mail, message) sont utilisées uniquement pour répondre à votre demande et établir un échange commercial.",
     "legalTitle": "Base légale",
     "legalBody": "Intérêt légitime et mesures précontractuelles : traiter une demande que vous initiez.",
     "retentionTitle": "Durée de conservation",
-    "retentionBody": "[Durée à confirmer, par exemple 12 mois après le dernier échange, puis suppression ou archivage limité]. Placeholder.",
+    "retentionBody": "TODO / CONTENT NEEDED — durée à confirmer (ex. 12 mois après le dernier échange), puis suppression ou archivage limité.",
     "recipientsTitle": "Destinataires",
-    "recipientsBody": "L’équipe Modulate. L’hébergeur Infomaniak. L’envoi d’e-mails passe par le SMTP Infomaniak. Aucun cession commerciale.",
+    "recipientsBody": "L’équipe Modulate. L’hébergeur Infomaniak. L’envoi d’e-mails passe par le SMTP Infomaniak. Aucune cession commerciale.",
     "rightsTitle": "Vos droits",
-    "rightsBody": "Vous pouvez demander l’accès, la rectification, l’effacement, la limitation ou l’opposition, dans les conditions prévues par le droit applicable (LPD / RGPD selon les cas). Écrivez à [e-mail — à compléter].",
+    "rightsBody": "Vous pouvez demander l’accès, la rectification, l’effacement, la limitation ou l’opposition, dans les conditions prévues par le droit applicable (LPD / RGPD selon les cas). Écrivez à marion@marionweb.ch.",
     "cookiesTitle": "Cookies",
     "cookiesBody": "Aucun cookie non essentiel n’est déposé à ce jour. Aucun outil d’analytics n’est chargé. Une bannière de consentement sera ajoutée si un tracker est introduit."
   },

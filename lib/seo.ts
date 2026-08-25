@@ -7,7 +7,8 @@ import { site } from "@/lib/site";
 type MetadataNamespace =
   | "Home"
   | "ComingSoon"
-  | "Services"
+  | "Approach"
+  | "Expertise"
   | "About"
   | "Work"
   | "Quote"

@@ -17,12 +17,18 @@ export const site = {
 
 export const navItems = [
   { href: "/", key: "home" },
-  { href: "/services", key: "services" },
-  { href: "/a-propos", key: "about" },
+  { href: "/notre-approche", key: "approach" },
+  { href: "/expertise", key: "expertise" },
   { href: "/realisations", key: "work" },
-  { href: "/devis", key: "quote" },
+  { href: "/a-propos", key: "about" },
   { href: "/contact", key: "contact" },
 ] as const;
+
+/** Header CTA — conversation, not quote configurator */
+export const navCta = {
+  href: "/contact",
+  key: "cta",
+} as const;
 
 export const legalItems = [
   { href: "/mentions-legales", key: "legal" },
