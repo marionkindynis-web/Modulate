@@ -6,12 +6,15 @@ type LogoProps = {
   variant?: "horizontal" | "picto";
   className?: string;
   priority?: boolean;
+  /** White lockup for dark surfaces */
+  inverted?: boolean;
 };
 
 export function Logo({
   variant = "horizontal",
   className = "",
   priority = false,
+  inverted = false,
 }: LogoProps) {
   if (variant === "picto") {
     return (
@@ -20,7 +23,7 @@ export function Logo({
         alt={site.name}
         width={40}
         height={40}
-        className={className}
+        className={`${inverted ? "brightness-0 invert" : ""} ${className}`}
         priority={priority}
         unoptimized
       />
@@ -34,7 +37,9 @@ export function Logo({
         alt={`${site.name} — ${site.taglineLockup}`}
         width={960}
         height={336}
-        className="h-9 w-auto lg:h-10"
+        className={`h-9 w-auto transition-[filter] duration-300 lg:h-10 ${
+          inverted ? "brightness-0 invert" : ""
+        }`}
         priority={priority}
       />
     </Link>

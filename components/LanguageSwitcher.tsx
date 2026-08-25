@@ -4,7 +4,11 @@ import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing, type AppLocale } from "@/i18n/routing";
 
-export function LanguageSwitcher() {
+export function LanguageSwitcher({
+  tone = "light",
+}: {
+  tone?: "light" | "dark";
+}) {
   const t = useTranslations("Nav");
   const locale = useLocale();
   const pathname = usePathname();
@@ -14,7 +18,11 @@ export function LanguageSwitcher() {
     <div
       role="group"
       aria-label={t("language")}
-      className="flex items-center rounded-md border border-line bg-surface p-0.5"
+      className={`flex items-center rounded-sm border p-0.5 ${
+        tone === "dark"
+          ? "border-white/25 bg-white/5"
+          : "border-line bg-surface"
+      }`}
     >
       {routing.locales.map((item) => {
         const active = item === locale;
@@ -22,8 +30,14 @@ export function LanguageSwitcher() {
           <button
             key={item}
             type="button"
-            className={`min-h-10 min-w-10 rounded-[5px] text-xs font-medium tracking-[0.06em] uppercase transition-colors duration-200 ${
-              active ? "bg-ink text-white" : "text-muted hover:text-ink"
+            className={`min-h-10 min-w-10 rounded-[4px] text-xs font-medium tracking-[0.06em] uppercase transition-colors duration-200 ${
+              active
+                ? tone === "dark"
+                  ? "bg-white text-ink"
+                  : "bg-ink text-white"
+                : tone === "dark"
+                  ? "text-white/55 hover:text-white"
+                  : "text-muted hover:text-ink"
             }`}
             aria-pressed={active}
             onClick={() => {

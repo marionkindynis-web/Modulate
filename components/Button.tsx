@@ -1,7 +1,7 @@
 import type { Pathname } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 
-type ButtonVariant = "primary" | "secondary" | "text" | "inverted";
+type ButtonVariant = "primary" | "secondary" | "text" | "inverted" | "ghost";
 
 type CommonProps = {
   children: React.ReactNode;
@@ -15,7 +15,9 @@ const variantClass: Record<ButtonVariant, string> = {
   secondary:
     "inline-flex min-h-11 items-center justify-center rounded-sm border border-line bg-transparent px-6 text-[0.9375rem] font-medium text-ink transition-colors duration-200 hover:border-ink disabled:cursor-not-allowed disabled:opacity-50",
   inverted:
-    "inline-flex min-h-11 items-center justify-center rounded-sm bg-white px-6 text-[0.9375rem] font-medium tracking-wide text-ink transition-colors duration-200 hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-50",
+    "inline-flex min-h-11 items-center justify-center rounded-sm bg-white px-6 text-[0.9375rem] font-medium tracking-wide text-ink transition-[transform,background-color] duration-200 hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-50",
+  ghost:
+    "group inline-flex min-h-11 items-center justify-center rounded-sm border border-white/35 bg-transparent px-6 text-[0.9375rem] font-medium text-white transition-[border-color,background-color,transform] duration-200 hover:border-white hover:bg-white/8 disabled:cursor-not-allowed disabled:opacity-50",
   text: "inline-flex min-h-11 items-center text-[0.9375rem] font-medium text-ink transition-transform duration-200 hover:translate-x-1",
 };
 
