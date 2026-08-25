@@ -39,7 +39,7 @@ export default async function WorkPage({ params }: Props) {
               <PlaceholderMedia />
             </div>
             <div className="lg:col-span-7">
-              <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
+              <p className="type-kicker">
                 {t(`items.${key}.kicker`)}
               </p>
               <h2 className="mt-3 font-display text-[28px] leading-9 text-ink">

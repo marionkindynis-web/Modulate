@@ -6,7 +6,7 @@ type SectionProps = {
 
 export function Section({ children, className = "", id }: SectionProps) {
   return (
-    <section id={id} className={`py-12 md:py-20 lg:py-28 ${className}`}>
+    <section id={id} className={`py-16 md:py-24 lg:py-32 ${className}`}>
       <div className="container-site">{children}</div>
     </section>
   );
@@ -16,20 +16,56 @@ export function PageIntro({
   kicker,
   title,
   intro,
+  brandAsHero = false,
 }: {
   kicker: string;
   title: string;
   intro: string;
+  /** Home: brand name as hero signal; other pages keep quiet kicker */
+  brandAsHero?: boolean;
 }) {
   return (
     <header className="max-w-3xl">
-      <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
-        {kicker}
+      {brandAsHero ? (
+        <>
+          <p className="type-brand motion-rise">{kicker}</p>
+          <span className="accent-rule motion-rise motion-rise-delay-1 mt-6" />
+          <h1 className="type-display-xl motion-rise motion-rise-delay-1 mt-8">
+            {title}
+          </h1>
+        </>
+      ) : (
+        <>
+          <p className="type-kicker">{kicker}</p>
+          <span className="accent-rule mt-5" />
+          <h1 className="type-display-xl mt-6">{title}</h1>
+        </>
+      )}
+      <p
+        className={`type-body-lg mt-6 max-w-xl text-muted ${
+          brandAsHero ? "motion-rise motion-rise-delay-2" : ""
+        }`}
+      >
+        {intro}
       </p>
-      <h1 className="mt-4 text-[40px] leading-12 md:text-[48px] md:leading-14 lg:text-[56px] lg:leading-16">
-        {title}
-      </h1>
-      <p className="mt-6 max-w-2xl text-copy">{intro}</p>
     </header>
+  );
+}
+
+export function SectionHeading({
+  kicker,
+  title,
+  intro,
+}: {
+  kicker: string;
+  title: string;
+  intro?: string;
+}) {
+  return (
+    <div className="max-w-2xl">
+      <p className="type-kicker">{kicker}</p>
+      <h2 className="type-display-lg mt-4">{title}</h2>
+      {intro ? <p className="type-body mt-5 max-w-xl text-muted">{intro}</p> : null}
+    </div>
   );
 }

@@ -1,8 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { ButtonLink } from "@/components/Button";
 import { ComingSoon } from "@/components/ComingSoon";
-import { PlaceholderMedia } from "@/components/PlaceholderMedia";
-import { PageIntro, Section } from "@/components/Section";
+import { PageIntro, Section, SectionHeading } from "@/components/Section";
 import { Link } from "@/i18n/navigation";
 import { resolveLocale } from "@/lib/locale";
 import { buildPageMetadata } from "@/lib/seo";
@@ -27,59 +26,54 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
-      <Section>
-        <div className="grid items-center gap-12 lg:grid-cols-12">
-          <div className="lg:col-span-7">
-            <PageIntro kicker={t("kicker")} title={t("title")} intro={t("intro")} />
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+      <section className="hero-atmosphere">
+        <div className="container-site flex min-h-[min(88vh,52rem)] flex-col justify-end pb-20 pt-16 md:justify-center md:pb-28 md:pt-20 lg:pb-32">
+          <div className="max-w-3xl">
+            <PageIntro
+              brandAsHero
+              kicker={t("kicker")}
+              title={t("title")}
+              intro={t("intro")}
+            />
+            <div className="motion-rise motion-rise-delay-3 mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
               <ButtonLink href="/contact">{t("primaryCta")}</ButtonLink>
               <ButtonLink href="/notre-approche" variant="secondary">
                 {t("secondaryCta")}
               </ButtonLink>
             </div>
           </div>
-          <div className="lg:col-span-5">
-            <PlaceholderMedia />
-          </div>
         </div>
-      </Section>
+      </section>
 
       <Section className="bg-surface">
-        <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
-          {t("problemKicker")}
-        </p>
-        <h2 className="mt-4 max-w-3xl text-[36px] leading-11">{t("problemTitle")}</h2>
-        <p className="mt-6 max-w-2xl text-copy">{t("problemBody")}</p>
+        <SectionHeading
+          kicker={t("problemKicker")}
+          title={t("problemTitle")}
+          intro={t("problemBody")}
+        />
       </Section>
 
       <Section>
-        <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
-          {t("improveKicker")}
-        </p>
-        <h2 className="mt-4 max-w-2xl text-[36px] leading-11">{t("improveTitle")}</h2>
-        <div className="mt-10 grid gap-10 md:grid-cols-2">
+        <SectionHeading kicker={t("improveKicker")} title={t("improveTitle")} />
+        <div className="mt-14 grid gap-12 border-t border-line pt-12 md:grid-cols-2 md:gap-16">
           <div>
-            <h3 className="font-display text-[28px] leading-9 text-ink">
-              {t("improveImageTitle")}
-            </h3>
-            <p className="mt-3 text-copy">{t("improveImageBody")}</p>
+            <h3 className="type-display-md">{t("improveImageTitle")}</h3>
+            <p className="type-body mt-4 text-muted">{t("improveImageBody")}</p>
           </div>
           <div>
-            <h3 className="font-display text-[28px] leading-9 text-ink">
-              {t("improveWorkTitle")}
-            </h3>
-            <p className="mt-3 text-copy">{t("improveWorkBody")}</p>
+            <h3 className="type-display-md">{t("improveWorkTitle")}</h3>
+            <p className="type-body mt-4 text-muted">{t("improveWorkBody")}</p>
           </div>
         </div>
       </Section>
 
       <Section className="bg-surface">
-        <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
-          {t("methodKicker")}
-        </p>
-        <h2 className="mt-4 max-w-2xl text-[36px] leading-11">{t("methodTitle")}</h2>
-        <p className="mt-6 max-w-2xl text-copy">{t("methodBody")}</p>
-        <div className="mt-8">
+        <SectionHeading
+          kicker={t("methodKicker")}
+          title={t("methodTitle")}
+          intro={t("methodBody")}
+        />
+        <div className="mt-10">
           <ButtonLink href="/notre-approche" variant="secondary">
             {t("methodCta")}
           </ButtonLink>
@@ -87,41 +81,39 @@ export default async function HomePage({ params }: Props) {
       </Section>
 
       <Section>
-        <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
-          {t("workKicker")}
-        </p>
-        <h2 className="mt-4 max-w-2xl text-[36px] leading-11">{t("workTitle")}</h2>
-        <p className="mt-6 max-w-2xl text-copy">{t("workIntro")}</p>
+        <SectionHeading
+          kicker={t("workKicker")}
+          title={t("workTitle")}
+          intro={t("workIntro")}
+        />
         <div className="mt-8">
-          <Link href="/realisations" className="text-[15px] font-medium text-ink">
+          <Link
+            href="/realisations"
+            className="type-nav font-medium text-ink transition-transform duration-200 hover:translate-x-1 inline-flex"
+          >
             {t("workCta")} →
           </Link>
         </div>
       </Section>
 
       <Section className="bg-surface">
-        <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
-          {t("whyKicker")}
-        </p>
-        <h2 className="mt-4 max-w-2xl text-[36px] leading-11">{t("whyTitle")}</h2>
-        <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <SectionHeading kicker={t("whyKicker")} title={t("whyTitle")} />
+        <div className="mt-14 grid gap-10 border-t border-line pt-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-14">
           {whyKeys.map((key) => (
             <div key={key}>
-              <h3 className="font-display text-[22px] leading-8 text-ink">
-                {t(`whyItems.${key}.title`)}
-              </h3>
-              <p className="mt-2 text-copy">{t(`whyItems.${key}.body`)}</p>
+              <h3 className="type-display-md">{t(`whyItems.${key}.title`)}</h3>
+              <p className="type-body mt-3 text-muted">{t(`whyItems.${key}.body`)}</p>
             </div>
           ))}
         </div>
       </Section>
 
       <Section>
-        <div className="rounded-xl border border-line bg-ink px-6 py-10 text-white md:px-12 md:py-14">
-          <h2 className="text-[36px] leading-11 text-white">{t("ctaTitle")}</h2>
-          <p className="mt-4 max-w-2xl text-white/80">{t("ctaBody")}</p>
-          <div className="mt-8">
-            <ButtonLink href="/contact" variant="secondary">
+        <div className="bg-ink px-6 py-14 text-white md:px-14 md:py-20">
+          <h2 className="type-display-lg text-white">{t("ctaTitle")}</h2>
+          <p className="type-body mt-5 max-w-xl text-white/70">{t("ctaBody")}</p>
+          <div className="mt-10">
+            <ButtonLink href="/contact" variant="inverted">
               {t("ctaButton")}
             </ButtonLink>
           </div>

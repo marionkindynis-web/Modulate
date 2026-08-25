@@ -34,7 +34,7 @@ export function Logo({
         alt={`${site.name} — ${site.taglineLockup}`}
         width={960}
         height={336}
-        className="h-12 w-auto lg:h-14"
+        className="h-9 w-auto lg:h-10"
         priority={priority}
       />
     </Link>

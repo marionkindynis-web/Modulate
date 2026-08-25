@@ -39,10 +39,10 @@ export default async function ExpertisePage({ params }: Props) {
       </Section>
 
       <Section className="bg-surface">
-        <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
+        <p className="type-kicker">
           {t("digitalKicker")}
         </p>
-        <h2 className="mt-4 max-w-3xl text-[36px] leading-11">{t("digitalTitle")}</h2>
+        <h2 className="type-display-lg mt-4 max-w-3xl">{t("digitalTitle")}</h2>
         <ul className="mt-8 grid gap-3 sm:grid-cols-2">
           {digitalKeys.map((key) => (
             <li key={key} className="border-t border-line pt-3 text-copy">
@@ -53,10 +53,10 @@ export default async function ExpertisePage({ params }: Props) {
       </Section>
 
       <Section>
-        <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
+        <p className="type-kicker">
           {t("systemsKicker")}
         </p>
-        <h2 className="mt-4 max-w-3xl text-[36px] leading-11">{t("systemsTitle")}</h2>
+        <h2 className="type-display-lg mt-4 max-w-3xl">{t("systemsTitle")}</h2>
         <ul className="mt-8 grid gap-3 sm:grid-cols-2">
           {systemsKeys.map((key) => (
             <li key={key} className="border-t border-line pt-3 text-copy">
@@ -68,16 +68,16 @@ export default async function ExpertisePage({ params }: Props) {
       </Section>
 
       <Section className="bg-surface">
-        <p className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
+        <p className="type-kicker">
           {t("entryKicker")}
         </p>
-        <h2 className="mt-4 max-w-2xl text-[36px] leading-11">{t("entryTitle")}</h2>
+        <h2 className="type-display-lg mt-4 max-w-2xl">{t("entryTitle")}</h2>
         <p className="mt-6 max-w-2xl text-copy">{t("entryBody")}</p>
       </Section>
 
       <Section>
         <div className="rounded-xl border border-line bg-ink px-6 py-10 text-white md:px-12 md:py-14">
-          <h2 className="text-[36px] leading-11 text-white">{t("ctaTitle")}</h2>
+          <h2 className="type-display-lg text-white">{t("ctaTitle")}</h2>
           <p className="mt-4 max-w-2xl text-white/80">{t("ctaBody")}</p>
           <div className="mt-8">
             <ButtonLink href="/contact" variant="secondary">

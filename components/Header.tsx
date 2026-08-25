@@ -13,11 +13,11 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-canvas/90 backdrop-blur-sm">
-      <div className="container-site flex h-16 items-center justify-between gap-4 lg:h-[4.5rem]">
+    <header className="sticky top-0 z-40 border-b border-line/80 bg-canvas/85 backdrop-blur-md">
+      <div className="container-site flex h-[4.25rem] items-center justify-between gap-6 lg:h-[4.75rem]">
         <Logo priority />
         <nav aria-label={t("mainNav")} className="hidden lg:block">
-          <ul className="flex items-center gap-1">
+          <ul className="flex items-center gap-0.5">
             {navItems.map((item) => {
               const active =
                 item.href === "/"
@@ -28,7 +28,7 @@ export function Header() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`inline-flex min-h-11 items-center px-3 text-[15px] font-medium transition-colors duration-200 ${
+                    className={`type-nav inline-flex min-h-10 items-center px-3 transition-colors duration-200 ${
                       active ? "text-ink" : "text-muted hover:text-ink"
                     }`}
                     aria-current={active ? "page" : undefined}
@@ -38,10 +38,10 @@ export function Header() {
                 </li>
               );
             })}
-            <li>
+            <li className="ml-4 pl-4 border-l border-line">
               <Link
                 href={navCta.href}
-                className="ml-2 inline-flex min-h-11 items-center rounded-md bg-ink px-4 text-[15px] font-medium text-white transition-colors duration-200 hover:bg-[#12122a]"
+                className="inline-flex min-h-10 items-center rounded-sm bg-ink px-4 text-[0.875rem] font-medium text-white transition-colors duration-200 hover:bg-[#12122a]"
               >
                 {t(navCta.key)}
               </Link>
@@ -52,7 +52,7 @@ export function Header() {
           <LanguageSwitcher />
           <button
             type="button"
-            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border border-line bg-surface lg:hidden"
+            className="inline-flex min-h-10 min-w-10 items-center justify-center rounded-sm border border-line bg-surface lg:hidden"
             aria-expanded={open}
             aria-controls="mobile-nav"
             onClick={() => setOpen((value) => !value)}
@@ -72,12 +72,12 @@ export function Header() {
           aria-label={t("mainNav")}
           className="border-t border-line bg-canvas lg:hidden"
         >
-          <ul className="container-site flex flex-col py-3">
+          <ul className="container-site flex flex-col py-4">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="flex min-h-11 items-center text-[15px] font-medium text-ink"
+                  className="flex min-h-11 items-center text-[0.9375rem] text-ink"
                   onClick={() => setOpen(false)}
                 >
                   {t(item.key)}
@@ -87,7 +87,7 @@ export function Header() {
             <li>
               <Link
                 href={navCta.href}
-                className="mt-2 flex min-h-11 items-center justify-center rounded-md bg-ink text-[15px] font-medium text-white"
+                className="mt-3 flex min-h-11 items-center justify-center rounded-sm bg-ink text-[0.875rem] font-medium text-white"
                 onClick={() => setOpen(false)}
               >
                 {t(navCta.key)}

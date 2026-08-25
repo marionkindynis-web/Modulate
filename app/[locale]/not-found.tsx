@@ -7,7 +7,7 @@ export default async function NotFoundPage() {
 
   return (
     <Section>
-      <h1 className="text-[40px] leading-12 md:text-[48px] md:leading-14">
+      <h1 className="type-display-xl">
         {t("title")}
       </h1>
       <p className="mt-4 max-w-xl">{t("body")}</p>

@@ -28,7 +28,7 @@ export default async function LegalPage({ params }: Props) {
       <dl className="mt-12 max-w-3xl space-y-8">
         {blocks.map(([title, body]) => (
           <div key={title} className="border-t border-line pt-6">
-            <dt className="text-xs font-medium tracking-[0.08em] text-muted uppercase">
+            <dt className="type-kicker">
               {t(title)}
             </dt>
             <dd className="mt-2">{t(body)}</dd>

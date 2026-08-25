@@ -10,7 +10,7 @@ export async function ComingSoon() {
         <p className="text-xs font-medium tracking-[0.14em] text-muted uppercase">
           {t("kicker")}
         </p>
-        <h1 className="mt-4 text-[40px] leading-12 md:text-[48px] md:leading-14">
+        <h1 className="type-display-xl mt-4">
           {t("title")}
           <br />
           <span className="brand-gradient-text">{t("brand")}</span>

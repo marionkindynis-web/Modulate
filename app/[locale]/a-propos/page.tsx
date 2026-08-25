@@ -23,24 +23,24 @@ export default async function AboutPage({ params }: Props) {
       </Section>
 
       <Section className="bg-surface">
-        <h2 className="max-w-2xl text-[36px] leading-11">{t("whyTitle")}</h2>
+        <h2 className="type-display-lg max-w-2xl">{t("whyTitle")}</h2>
         <p className="mt-6 max-w-2xl text-copy">{t("whyBody")}</p>
       </Section>
 
       <Section>
-        <h2 className="max-w-2xl text-[36px] leading-11">{t("peopleTitle")}</h2>
+        <h2 className="type-display-lg max-w-2xl">{t("peopleTitle")}</h2>
         <p className="mt-6 max-w-2xl text-copy">{t("peopleBody")}</p>
         <p className="mt-3 text-sm text-muted">{t("peopleNote")}</p>
       </Section>
 
       <Section className="bg-surface">
-        <h2 className="max-w-2xl text-[36px] leading-11">{t("complementTitle")}</h2>
+        <h2 className="type-display-lg max-w-2xl">{t("complementTitle")}</h2>
         <p className="mt-6 max-w-2xl text-copy">{t("complementBody")}</p>
         <p className="mt-8 text-sm text-muted">{site.taglineLockup}</p>
       </Section>
 
       <Section>
-        <h2 className="max-w-2xl text-[36px] leading-11">{t("ctaTitle")}</h2>
+        <h2 className="type-display-lg max-w-2xl">{t("ctaTitle")}</h2>
         <div className="mt-8">
           <ButtonLink href="/contact">{t("ctaButton")}</ButtonLink>
         </div>
