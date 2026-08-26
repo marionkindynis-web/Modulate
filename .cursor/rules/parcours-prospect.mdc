@@ -12,7 +12,7 @@ Le cerveau décide « je reste / je pars ». Il ne lit pas : il **classe**.
 1. **Reconnaissance** — « C’est pour qui, c’est quoi. » Marque + une promesse, pas un manifeste.
 2. **Pertinence** — Le visiteur se reconnaît (entreprise qui évolue, pas un template SaaS).
 3. **Bénéfice sans rupture** — SoT : améliorer l’existant, pas tout casser.
-4. **Une action** — Un CTA primaire clair. Le secondaire ne concurrence pas.
+4. **Une action claire** — CTA primaire net. Un second bouton du même poids dilue (loi de Hick / choix concurrent, Nielsen). Ce n’est **pas** une règle W3C/WCAG : un lien texte secondaire est souvent acceptable.
 5. **Confiance visuelle** — Contraste, air, charte. Le luxe vient du calme, pas du chrome (numéros, badges, loading).
 
 Fausse route : décor, numérotation, mist, stats vides **avant** que la phrase soit lue. Ça vole les 3 secondes.
