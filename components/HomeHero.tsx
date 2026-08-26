@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { ButtonLink } from "@/components/Button";
+import { Link } from "@/i18n/navigation";
 
 export function HomeHero() {
   const t = useTranslations("Home");
@@ -53,19 +54,17 @@ export function HomeHero() {
           >
             {t("intro")}
           </p>
-          <div className="motion-rise motion-rise-delay-3 mt-11 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="motion-rise motion-rise-delay-3 mt-11 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
             <ButtonLink href="/contact" variant="inverted">
               {t("primaryCta")}
             </ButtonLink>
-            <ButtonLink href="/notre-approche" variant="ghost">
+            <Link
+              href="/notre-approche"
+              className="link-arrow type-nav min-h-11 inline-flex items-center font-medium text-white/80 transition-colors duration-200 hover:text-white"
+            >
               {t("secondaryCta")}
-              <span
-                className="ml-2 inline-block transition-transform duration-200 group-hover:translate-x-1"
-                aria-hidden
-              >
-                →
-              </span>
-            </ButtonLink>
+              <span aria-hidden>→</span>
+            </Link>
           </div>
         </div>
       </div>
