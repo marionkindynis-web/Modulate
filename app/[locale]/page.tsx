@@ -50,11 +50,11 @@ export default async function HomePage({ params }: Props) {
         </Reveal>
         <div className="mt-14 grid gap-12 border-t border-line pt-12 md:grid-cols-2 md:gap-16">
           <Reveal delay={1}>
-            <h3 className="type-display-md">{t("improveImageTitle")}</h3>
+            <h3 className="type-display-md text-ink">{t("improveImageTitle")}</h3>
             <p className="type-body mt-4 text-muted">{t("improveImageBody")}</p>
           </Reveal>
           <Reveal delay={2}>
-            <h3 className="type-display-md">{t("improveWorkTitle")}</h3>
+            <h3 className="type-display-md text-ink">{t("improveWorkTitle")}</h3>
             <p className="type-body mt-4 text-muted">{t("improveWorkBody")}</p>
           </Reveal>
         </div>
@@ -100,7 +100,7 @@ export default async function HomePage({ params }: Props) {
         <div className="mt-14 grid gap-10 border-t border-line pt-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-14">
           {whyKeys.map((key, i) => (
             <Reveal key={key} delay={Math.min(i, 5)}>
-              <h3 className="type-display-md">{t(`whyItems.${key}.title`)}</h3>
+              <h3 className="type-display-md text-ink">{t(`whyItems.${key}.title`)}</h3>
               <p className="type-body mt-3 text-muted">{t(`whyItems.${key}.body`)}</p>
             </Reveal>
           ))}

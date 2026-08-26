@@ -47,11 +47,13 @@ export function SectionHeading({
     <div className="max-w-2xl">
       <p className="type-kicker flex items-center gap-3">
         {index ? (
-          <span className="font-display tabular-nums text-ink/40">{index}</span>
+          <span className="font-display text-[0.8125rem] tracking-[0.08em] tabular-nums text-ink/35">
+            {index}
+          </span>
         ) : null}
         <span>{kicker}</span>
       </p>
-      <h2 className="type-display-lg mt-4 text-ink">{title}</h2>
+      <h2 className="type-display-lg mt-5 text-ink">{title}</h2>
       {intro ? <p className="type-body mt-5 max-w-xl text-muted">{intro}</p> : null}
     </div>
   );

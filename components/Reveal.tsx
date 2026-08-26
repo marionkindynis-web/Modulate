@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 type RevealProps = {
   children: React.ReactNode;
   className?: string;
-  /** Stagger index for delay (0–5) */
   delay?: number;
 };
 
@@ -30,7 +29,8 @@ export function Reveal({ children, className = "", delay = 0 }: RevealProps) {
           observer.disconnect();
         }
       },
-      { threshold: 0.16, rootMargin: "0px 0px -8% 0px" },
+      /* Fire later so the rise is visible while scrolling */
+      { threshold: 0.22, rootMargin: "0px 0px -12% 0px" },
     );
 
     observer.observe(node);
