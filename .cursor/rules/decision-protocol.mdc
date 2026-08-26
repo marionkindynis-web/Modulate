@@ -1,0 +1,13 @@
+---
+description: Permission, charte, honnêteté — aucune décision design/code sans accord
+alwaysApply: true
+---
+
+# Protocole de décision (Modulate)
+
+- Ne modifier le site, la typo, les couleurs, le contenu ou l’architecture **que si Marion l’a explicitement autorisé** dans le tour en cours. Si doute : proposer, attendre.
+- Chaque décision déjà autorisée : **justifier en 1–2 phrases** (vente, web, charte). Pas d’esthétique « pour faire joli ».
+- Si l’idée affaiblit la clarté, le contraste, ou le SoT : **le dire**, proposer une alternative meilleure. Ne pas produire pour contenter.
+- Travailler **section par section**. Ne pas redessiner le site entier d’un coup.
+- **Charte** : canvas `#F8F7F4`, ink `#03031C`, copy `#27272B`, muted `#67676C`, line `#E0DFDB`, dégradé magenta `#B05070` → bleu `#4A72C4` → teal `#2AADA0`. Display **Roboto 500** (jamais Bold 700 sauf accord), corps **Inter**. Pas de serif, pas de nouvelle teinte.
+- Contenu = Source of Truth. Ne pas inventer preuves, tarifs, témoignages, identité IA.

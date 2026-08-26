@@ -1,0 +1,39 @@
+---
+description: Règles vente (3 s) + web pour le parcours Accueil — base de chaque section
+alwaysApply: true
+---
+
+# Parcours prospect — vente + web
+
+## 3 secondes (premier viewport)
+
+Le cerveau décide « je reste / je pars ». Il ne lit pas : il **classe**.
+
+1. **Reconnaissance** — « C’est pour qui, c’est quoi. » Marque + une promesse, pas un manifeste.
+2. **Pertinence** — Le visiteur se reconnaît (entreprise qui évolue, pas un template SaaS).
+3. **Bénéfice sans rupture** — SoT : améliorer l’existant, pas tout casser.
+4. **Une action** — Un CTA primaire clair. Le secondaire ne concurrence pas.
+5. **Confiance visuelle** — Contraste, air, charte. Le luxe vient du calme, pas du chrome (numéros, badges, loading).
+
+Fausse route : décor, numérotation, mist, stats vides **avant** que la phrase soit lue. Ça vole les 3 secondes.
+
+## Après les 3 s (scroll structuré)
+
+Ordre classique B2B (AIDA / PAS, un seul fil) :
+
+1. **Promesse** (hero) → 2. **Problème partagé** → 3. **Offre cadrée** (deux terrains) → 4. **Méthode** (comment on décide) → 5. **Preuve** (cas, pas slogans) → 6. **Pourquoi nous** (court) → 7. **Contact**.
+
+Une idée par section. Kicker utile (thème), pas `01`. Barre de progression = orientation, pas histoire.
+
+## Web (non négociable)
+
+- Contraste : texte sur fond = lisible WCAG, y compris hero dark.
+- Hiérarchie : un H1 par page ; titres ≠ corps.
+- Cible tactile ≥ 44px ; focus visible.
+- Motion au service du parcours (révélation, barre). `prefers-reduced-motion`.
+- Nav = carte du site, pas un second storytelling.
+- Mobile : même récit, pas de chrome latéral.
+
+## Accueil — état voulu
+
+Hero = test 3 s. Suite = un argument à la fois. Preuve absente = ne pas faire semblant (placeholder honnête, section courte).

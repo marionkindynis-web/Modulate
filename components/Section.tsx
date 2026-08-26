@@ -35,24 +35,14 @@ export function SectionHeading({
   kicker,
   title,
   intro,
-  index,
 }: {
   kicker: string;
   title: string;
   intro?: string;
-  /** Editorial chapter number, e.g. "01" */
-  index?: string;
 }) {
   return (
     <div className="max-w-2xl">
-      <p className="type-kicker flex items-center gap-3">
-        {index ? (
-          <span className="font-display text-[0.8125rem] tracking-[0.08em] tabular-nums text-ink/35">
-            {index}
-          </span>
-        ) : null}
-        <span>{kicker}</span>
-      </p>
+      <p className="type-kicker">{kicker}</p>
       <h2 className="type-display-lg mt-5 text-ink">{title}</h2>
       {intro ? <p className="type-body mt-5 max-w-xl text-muted">{intro}</p> : null}
     </div>

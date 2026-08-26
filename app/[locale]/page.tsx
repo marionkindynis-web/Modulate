@@ -25,7 +25,6 @@ export default async function HomePage({ params }: Props) {
   }
 
   const t = await getTranslations("Home");
-  const tNav = await getTranslations("Nav");
   const whyKeys = ["method", "expertise", "proximity", "transparency", "results"] as const;
 
   return (
@@ -36,7 +35,6 @@ export default async function HomePage({ params }: Props) {
       <Section id="home-problem" className="bg-surface">
         <Reveal>
           <SectionHeading
-            index="01"
             kicker={t("problemKicker")}
             title={t("problemTitle")}
             intro={t("problemBody")}
@@ -46,7 +44,7 @@ export default async function HomePage({ params }: Props) {
 
       <Section id="home-improve">
         <Reveal>
-          <SectionHeading index="02" kicker={t("improveKicker")} title={t("improveTitle")} />
+          <SectionHeading kicker={t("improveKicker")} title={t("improveTitle")} />
         </Reveal>
         <div className="mt-14 grid gap-12 border-t border-line pt-12 md:grid-cols-2 md:gap-16">
           <Reveal delay={1}>
@@ -63,7 +61,6 @@ export default async function HomePage({ params }: Props) {
       <Section id="home-method" className="bg-surface">
         <Reveal>
           <SectionHeading
-            index="03"
             kicker={t("methodKicker")}
             title={t("methodTitle")}
             intro={t("methodBody")}
@@ -79,7 +76,6 @@ export default async function HomePage({ params }: Props) {
       <Section id="home-work">
         <Reveal>
           <SectionHeading
-            index="04"
             kicker={t("workKicker")}
             title={t("workTitle")}
             intro={t("workIntro")}
@@ -95,7 +91,7 @@ export default async function HomePage({ params }: Props) {
 
       <Section id="home-why" className="bg-surface">
         <Reveal>
-          <SectionHeading index="05" kicker={t("whyKicker")} title={t("whyTitle")} />
+          <SectionHeading kicker={t("whyKicker")} title={t("whyTitle")} />
         </Reveal>
         <div className="mt-14 grid gap-10 border-t border-line pt-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-14">
           {whyKeys.map((key, i) => (
@@ -110,11 +106,7 @@ export default async function HomePage({ params }: Props) {
       <Section id="home-cta">
         <Reveal>
           <div className="bg-ink px-6 py-14 text-white md:px-14 md:py-20">
-            <p className="type-kicker text-white/45">
-              <span className="font-display tabular-nums text-white/35">06</span>
-              <span className="ml-3">{tNav("contact")}</span>
-            </p>
-            <h2 className="type-display-lg mt-4 text-white">{t("ctaTitle")}</h2>
+            <h2 className="type-display-lg text-white">{t("ctaTitle")}</h2>
             <p className="type-body mt-5 max-w-xl text-white/70">{t("ctaBody")}</p>
             <div className="mt-10">
               <ButtonLink href="/contact" variant="inverted">

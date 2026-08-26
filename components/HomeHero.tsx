@@ -27,7 +27,6 @@ export function HomeHero() {
     <section
       id="home-hero"
       className="hero-dark relative isolate flex min-h-[min(100svh,56rem)] flex-col justify-end overflow-hidden pb-24 pt-[calc(4.25rem+4rem)] -mt-[4.25rem] md:justify-center md:pb-32 md:pt-[calc(4.75rem+5rem)] lg:-mt-[4.75rem]"
-      data-home-chapter="00"
     >
       <div
         ref={mistRef}
